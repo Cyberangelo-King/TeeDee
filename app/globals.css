@@ -57,7 +57,7 @@ section[id] { scroll-margin-top: 24px; }
 .art-label { position:absolute; bottom:24px; right:0; color:#78847a; font:10px var(--mono); letter-spacing:.1em; }
 .hero-index { position:absolute; bottom:34px; left:0; color:#69756b; font:10px var(--mono); }
 .section { padding:110px 0; border-top:1px solid var(--line); }
-.section-head { display:flex; justify-content:space-between; align-items:end; gap:40px; margin-bottom:50px; }
+.section-head { display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:50px; }
 .section h2 { font-size:clamp(38px,5vw,66px); letter-spacing:-.075em; line-height:1.02; font-weight:600; max-width:680px; margin:18px 0 0; }
 .section-intro { color:#9eaaa0; max-width:340px; font-size:13px; line-height:1.8; }
 .capabilities { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--line); }
