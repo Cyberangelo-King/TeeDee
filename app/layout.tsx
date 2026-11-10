@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   },
   description:
     "A first look at the TeeDee Edge Automations digital experience. Company services, project evidence and contact details are being confirmed with the team.",
-  metadataBase: new URL("https://teedee-edge-automations.netlify.app"),
   openGraph: {
     title: "TeeDee Edge Automations",
     description: "Integrated systems. Thoughtfully delivered.",
