@@ -24,6 +24,14 @@ export default function Home() {
             <a href="#capabilities">Capabilities</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
           </nav>
           <a className="nav-cta" href="#contact">Start a conversation <ArrowUpRight size={14}/></a>
+          <details className="mobile-menu">
+            <summary aria-label="Open navigation">Menu</summary>
+            <nav aria-label="Mobile navigation">
+              <a href="#capabilities">Capabilities</a>
+              <a href="#approach">Approach</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </details>
         </header>
 
         <section className="hero">
