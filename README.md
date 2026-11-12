@@ -7,7 +7,7 @@ The public website is the first delivery surface in the TeeDee digital operation
 - Netlify project: https://app.netlify.com/projects/teedeeedge
 
 ## Technology
-- Next.js 15
+- Next.js 15 static export
 - React 19
 - TypeScript
 - Lucide icons
@@ -21,6 +21,7 @@ The public website is the first delivery surface in the TeeDee digital operation
 - Netlify Forms-compatible project enquiry form
 - Metadata, Open Graph and search indexing defaults
 - Reduced-motion support and keyboard focus states
+- Dedicated static thank-you and not-found pages
 
 ## Local development
 
@@ -35,8 +36,10 @@ npm run dev
 npm run build
 ```
 
+Next.js writes the complete static site to `out/`. Netlify publishes that directory. The application does not require a Next.js server runtime for its current public-site feature set.
+
 ## Deployment
-Netlify Forms processing is enabled for the project enquiry form. The project is configured for Netlify. The repository includes `netlify.toml`; connect the GitHub repository to the `main` production branch for continuous deployment.
+Netlify Forms processing is enabled for the project enquiry form. The project is configured for Netlify static export in `netlify.toml`; `NETLIFY_NEXT_PLUGIN_SKIP=true` prevents a server adapter from being injected into this static-only build.
 
 ## Important launch checks
 The current public copy is intentionally conservative. Before treating the website as the final approved company profile, TeeDee should confirm:
