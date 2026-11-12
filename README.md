@@ -36,7 +36,7 @@ npm run build
 ```
 
 ## Deployment
-The project is configured for Netlify. The repository includes `netlify.toml`; connect the GitHub repository to the `main` production branch for continuous deployment.
+Netlify Forms processing is enabled for the project enquiry form. The project is configured for Netlify. The repository includes `netlify.toml`; connect the GitHub repository to the `main` production branch for continuous deployment.
 
 ## Important launch checks
 The current public copy is intentionally conservative. Before treating the website as the final approved company profile, TeeDee should confirm:
