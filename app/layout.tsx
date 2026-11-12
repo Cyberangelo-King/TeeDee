@@ -2,22 +2,39 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://teedeeedge.netlify.app"),
   title: {
-    default: "TeeDee Edge Automations | Integrated Systems, Thoughtfully Delivered",
+    default: "TeeDee Edge Automations | Integrated Technology, Thoughtfully Delivered",
     template: "%s | TeeDee Edge Automations",
   },
   description:
-    "A first look at the TeeDee Edge Automations digital experience. Company services, project evidence and contact details are being confirmed with the team.",
+    "TeeDee Edge Automations brings security, network infrastructure, power systems and integrated technology together through considered planning and practical delivery.",
+  keywords: [
+    "TeeDee Edge Automations",
+    "CCTV installation",
+    "security surveillance",
+    "network infrastructure",
+    "solar power systems",
+    "technology integration",
+  ],
   openGraph: {
     title: "TeeDee Edge Automations",
-    description: "Integrated systems. Thoughtfully delivered.",
+    description: "Make every connection count. Integrated technology, thoughtfully delivered.",
     type: "website",
+    locale: "en_NG",
+    siteName: "TeeDee Edge Automations",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "TeeDee Edge Automations",
+    description: "Integrated technology, thoughtfully delivered.",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en-NG">
       <body>{children}</body>
     </html>
   );
