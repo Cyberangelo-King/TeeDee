@@ -115,7 +115,7 @@ export default function Home() {
             <div className="visual-node node-b"><Cable size={16} /><span>NETWORK</span></div>
             <div className="visual-node node-c"><Sun size={16} /><span>POWER</span></div>
             <div className="visual-caption"><span>01 / 04</span><span>SYSTEMS, CONNECTED</span></div>
-            <div className="visual-coordinate">06°27&apos; N&nbsp; 03°24&apos; E</div>
+            <div className="visual-coordinate">SYSTEMS / CONNECTED BY DESIGN</div>
           </div>
           <div className="hero-bottom">
             <span>BUILT AROUND YOUR ENVIRONMENT</span>
