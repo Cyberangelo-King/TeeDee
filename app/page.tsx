@@ -74,7 +74,7 @@ const industries = [
   },
 ];
 
-const process = [
+const deliverySteps = [
   ["01", "Understand", "We learn how the site works, what matters to you and what the system needs to achieve."],
   ["02", "Plan", "We translate the brief into a practical scope, site requirements and a considered delivery plan."],
   ["03", "Deliver", "Installation and configuration are coordinated with attention to workmanship, safety and detail."],
@@ -220,7 +220,7 @@ export default function Home() {
             <p>The quality of an installation is shaped long before the equipment is switched on. These are the steps we use to keep the work clear.</p>
           </div>
           <div className="process-grid">
-            {process.map(([number, title, description]) => <article className="process-step" key={number}>
+            {deliverySteps.map(([number, title, description]) => <article className="process-step" key={number}>
               <span className="step-number">{number}</span>
               <div className="step-rule" />
               <h3>{title}</h3>
