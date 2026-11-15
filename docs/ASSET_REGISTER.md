@@ -1,42 +1,42 @@
 # Asset Register
 
-**Project:** TeeDee Edge Automations LTD Website  
-**Date:** 15 November 2026
+**Project:** TeeDee Edge Automations LTD website  
+**Last reviewed:** 15 November 2026
 
----
+## Supplied brand assets
 
-## 1. Primary Supplied Brand Assets
+| File | Use | Status |
+|---|---|---|
+| `public/brand/teedee-logo-original.jpg` | Original logo reference | Preserved |
+| `public/brand/teedee-flyer-original.jpg` | Supplied company information source | Preserved |
+| `public/brand/logo-primary.svg` | Brand lockup for light surfaces | Available |
+| `public/brand/logo-light.svg` | Brand lockup for dark surfaces | Used in header and footer |
+| `public/brand/favicon.svg` | Browser icon | Used |
 
-| File Path | Type | Resolution / Size | Source | Purpose | Status |
-|---|---|---|---|---|---|
-| `public/brand/teedee-logo-original.jpg` | JPEG Raster | 1024 x 512 (~74 KB) | User upload | Master corporate logo & RC verification | Staged in `public/brand/` |
-| `public/brand/teedee-flyer-original.jpg` | JPEG Raster | 576 x 753 (~81 KB) | User upload | Authoritative content source of truth | Staged in `public/brand/` |
+## Generated vector illustrations
 
----
+- `public/images/services/*.svg`: ten category illustrations generated from the brand palette.
+- `public/images/industries/*.svg`: four industry illustrations.
+- These are vector illustrations, not photographs of TeeDee installations or completed projects. They must not be presented as documentary project evidence.
+- The asset-generation script writes SVG files only. Do not create a file with a `.webp` extension unless it has actually been encoded as WebP and verified.
 
-## 2. Derived & Generated Web Brand Assets
+## Hero video
 
-| Target File Path | Type | Specifications | Purpose |
-|---|---|---|---|
-| `public/brand/logo-primary.svg` | SVG Vector | High-precision vector lockup | Navbar, footer, sticky headers |
-| `public/brand/logo-light.svg` | SVG Vector | White/light stroke derivative | Dark hero and graphite section headers |
-| `public/brand/favicon.svg` | SVG Vector | Derived circular radar/lightning glyph | Browser tab icon and PWA manifest |
-| `public/brand/favicon.ico` | ICO | 32x32 / 16x16 multi-layer icon | Legacy browser favicon support |
+The current presentation build uses the Ucam reference MP4 at:
 
----
+`https://madebydesignesia.com/themes/ucam/video/2.mp4`
 
-## 3. Video & Media Assets
+**Status: presentation-only reference footage.** No production-use licence has been established. It is intentionally configurable through `NEXT_PUBLIC_HERO_VIDEO_URL`, muted and looped, with a local SVG poster and a CSS illustration fallback. It is hidden on small screens and for visitors who request reduced motion.
 
-| Target File Path | Type | Specifications | Placement | Status |
-|---|---|---|---|---|
-| `public/video/hero-desktop.mp4` | MP4 (H.264) | 1080p, 24fps, muted, 12s loop, ~4-6 MB | Desktop Hero background | Production staging |
-| `public/video/hero-desktop.webm` | WebM (VP9) | 1080p, 24fps, muted, 12s loop, ~2-3 MB | High-efficiency modern desktop hero | Production staging |
-| `public/video/poster-hero.webp` | WebP | 1920x1080, quality 85, ~120 KB | Hero fallback & Mobile LCP poster | Production staging |
-| `public/images/services/*.webp` | WebP | 800x600, aspect-ratio 4:3 | 10 Service category showcase cards | Production staging |
-| `public/images/og/teedee-og.jpg` | JPEG | 1200x630, social sharing card | Open Graph & Twitter Summary card | Production staging |
+Before production launch, replace it with a TeeDee-owned or properly licensed MP4/WebM asset. Confirm usage rights, optimise file size, provide a poster image, and test on mobile networks.
 
----
+## Missing / future assets
 
-## 4. Rights and Verification Rules
-- The original raster files are preserved untouched in `public/brand/`.
-- All photography and video loops represent genuine, contextually accurate infrastructure (CCTV cameras, inverters, automated gates, wiring, server racks) with no sci-fi or misleading claims.
+- Approved real installation photography and case-study imagery.
+- A dedicated 1200×630 social-sharing image.
+- Locally hosted, optimised hero video and poster.
+- Real WebP/AVIF exports only when created with a genuine image encoder.
+
+## Integrity rules
+
+Never use a visual asset to imply a project, client, certification or installation that has not been verified. Preserve the original supplied brand files unchanged.
