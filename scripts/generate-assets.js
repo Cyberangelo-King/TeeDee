@@ -43,7 +43,6 @@ services.forEach(s => {
 </svg>`;
 
   fs.writeFileSync(path.join(dir, `${s.name}.svg`), svg);
-  fs.writeFileSync(path.join(dir, `${s.name}.webp`), svg); // SVG-compatible WebP fallback
 });
 
-console.log('Generated 10 service SVG assets successfully');
+console.log('Generated 10 service SVG assets successfully. Convert to WebP with an image encoder before creating .webp files.');
