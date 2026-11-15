@@ -30,7 +30,7 @@ export function ContactForm() {
 
   const createWhatsAppLink = () => {
     const text = encodeURIComponent(
-      `Hello TeeDee Edge Automations,\n\nMy Name: ${formData.name || "Client"}\nPhone: ${formData.phone || "Not provided"}\nService Needed: ${formData.service}\nProperty Type: ${formData.propertyType}\nLocation: ${formData.location}\nDetails: ${formData.message || "I would like to request a site assessment."}`
+      `Hello TeeDee Edge Automations,\n\nMy Name: ${formData.name || "Client"}\nPhone: ${formData.phone || "Not provided"}\nEmail: ${formData.email || "Not provided"}\nService Needed: ${formData.service}\nProperty Type: ${formData.propertyType}\nLocation: ${formData.location}\nDetails: ${formData.message || "I would like to request a site assessment."}`
     );
     return `https://wa.me/${siteConfig.whatsappNumber}?text=${text}`;
   };
