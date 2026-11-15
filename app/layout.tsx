@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://teedeeedge.netlify.app"),
   alternates: { canonical: "/" },
+  icons: { icon: "/brand/favicon.svg" },
   title: {
     default: "TeeDee Edge Automations | Integrated Technology, Thoughtfully Delivered",
     template: "%s | TeeDee Edge Automations",
@@ -30,7 +31,10 @@ export const metadata: Metadata = {
     title: "TeeDee Edge Automations",
     description: "Integrated technology, thoughtfully delivered.",
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: process.env.NEXT_PUBLIC_INDEX_SITE === "true",
+    follow: process.env.NEXT_PUBLIC_INDEX_SITE === "true",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
