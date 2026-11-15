@@ -197,3 +197,22 @@ button,input,textarea,select{font:inherit}
 .direct-contact a:hover{color:var(--signal-orange);border-color:var(--signal-orange)}
 @media(max-width:700px){.direct-contact{margin-top:22px}}
 @media(prefers-reduced-motion:reduce){.visual-video{display:none}}
+
+
+.confirmation-page,.policy-page{min-height:100vh;background:var(--ink);color:var(--paper);padding:clamp(28px,7vw,88px) 24px}
+.confirmation-page{display:grid;place-items:center}
+.confirmation-card{width:min(100%,660px);padding:clamp(28px,6vw,60px);background:var(--ink-2);border:1px solid var(--line);box-shadow:0 28px 90px #0004}
+.confirmation-card h1,.policy-wrap h1{font:700 clamp(48px,8vw,82px)/.98 var(--display);letter-spacing:-.08em;margin:28px 0 22px}
+.confirmation-card h1 em,.policy-wrap h1 em{font-style:normal;color:var(--signal-red)}
+.confirmation-card>p:not(.eyebrow){max-width:520px;color:#A6A9AE;font-size:13px;line-height:1.9}
+.confirmation-note{margin:22px 0 28px}
+.confirmation-note a,.policy-wrap a:not(.policy-back){color:var(--signal-orange);text-decoration:underline;text-underline-offset:3px}
+.policy-wrap{width:min(100%,860px);margin:0 auto}
+.policy-back{display:inline-block;margin-bottom:62px;color:#C7C9C5;font-size:12px}
+.policy-wrap h1{font-size:clamp(54px,8vw,90px)}
+.policy-intro{max-width:690px;margin:28px 0 60px;color:#C0C3BE;font-size:16px;line-height:1.9}
+.policy-wrap section{max-width:700px;padding:27px 0;border-top:1px solid var(--line)}
+.policy-wrap section h2{font:700 20px var(--display);margin:0 0 12px}
+.policy-wrap section p{color:#A6A9AE;font-size:13px;line-height:1.95;margin:0}
+.policy-disclaimer{max-width:700px;margin-top:44px;padding:18px;border-left:2px solid var(--signal-orange);background:#E57A2F0D;color:#A6A9AE;font-size:11px;line-height:1.8}
+.policy-updated{color:#747982;font:10px var(--mono);margin-top:24px}
