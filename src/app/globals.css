@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --td-red: #B32632;
+  --td-red-hover: #961E28;
+  --td-orange: #E57A2F;
+  --td-orange-hover: #C96620;
+  --td-graphite: #17191D;
+  --td-graphite-dark: #0F1114;
+  --td-graphite-card: #202329;
+  --td-paper: #F4F2ED;
+  --td-white: #FFFFFF;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #17191D;
+    background-color: #FFFFFF;
+    font-family: var(--font-inter), sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #B32632;
+    color: #FFFFFF;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .glass-dark {
+    background: rgba(23, 25, 29, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-card {
+    background: rgba(32, 35, 41, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}

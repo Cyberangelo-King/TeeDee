@@ -1,0 +1,24 @@
+{
+  "project": "TeeDee Edge Automations LTD Website",
+  "version": "1.0",
+  "created": "2026-11-15",
+  "reference": "https://reactheme.com/products/wordpress/ucam/home-3/",
+  "preferred_reference_variant": "Video-background hero variation",
+  "brand_line": "Secure. Power. Automate.",
+  "palette": {
+    "signal_red": "#B32632",
+    "signal_orange": "#E57A2F",
+    "graphite": "#17191D",
+    "warm_paper": "#F4F2ED",
+    "white": "#FFFFFF"
+  },
+  "stack_preference": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Framer Motion",
+    "GSAP (selective)",
+    "Lottie"
+  ],
+  "handoff": "Google Antigravity -> GitHub -> ChatGPT continuation"
+}
