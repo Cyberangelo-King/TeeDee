@@ -12,9 +12,9 @@ export function ContactForm() {
     name: "",
     phone: "",
     email: "",
-    service: "cctv-systems",
-    propertyType: "residential",
-    location: "Lagos",
+    service: services[0]?.title ?? "CCTV & Video Surveillance",
+    propertyType: "Residential Compound / Villa",
+    location: "Lagos State",
     message: "",
   });
 
@@ -22,10 +22,9 @@ export function ContactForm() {
     e.preventDefault();
     setStatus("submitting");
 
-    // Construct WhatsApp message URL as instant fail-safe
-    setTimeout(() => {
-      setStatus("success");
-    }, 700);
+    // A prepared WhatsApp message is not a received enquiry. The visitor must send it.
+    const popup = window.open(createWhatsAppLink(), "_blank", "noopener,noreferrer");
+    setStatus(popup ? "success" : "error");
   };
 
   const createWhatsAppLink = () => {
@@ -43,10 +42,10 @@ export function ContactForm() {
             <CheckCircle2 className="h-8 w-8" />
           </div>
           <h3 className="font-display text-2xl font-bold text-td-graphite">
-            Assessment Request Received!
+            WhatsApp message prepared.
           </h3>
           <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-            Thank you, <span className="font-semibold">{formData.name}</span>. An engineer from our {formData.location} team will contact you shortly via {formData.phone || formData.email}.
+            Thank you, <span className="font-semibold">{formData.name}</span>. WhatsApp should have opened with your enquiry details. Review the message and press Send to submit it to TeeDee. The team has not received it until you send it.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button
@@ -57,7 +56,7 @@ export function ContactForm() {
               className="gap-2 w-full sm:w-auto"
             >
               <MessageSquare className="h-4 w-4" />
-              Forward Directly on WhatsApp
+              Open WhatsApp to send enquiry
             </Button>
             <Button
               variant="outline"
@@ -70,7 +69,7 @@ export function ContactForm() {
           </div>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-5">\n          {status === "error" && <div role="alert" className="flex items-start gap-2 rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900"><AlertCircle className="mt-0.5 h-4 w-4 shrink-0" /><span>Your browser blocked the WhatsApp window. <a className="font-semibold underline" href={createWhatsAppLink()} target="_blank" rel="noreferrer">Open your prepared enquiry manually</a>.</span></div>}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label
