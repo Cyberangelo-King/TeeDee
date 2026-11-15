@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 # Dependencies
+=======
+# dependencies
+>>>>>>> 0a6a580 (feat: complete first release of TeeDee Edge Automations website)
 /node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
 
+<<<<<<< HEAD
 # Next.js and build output
 /.next/
 /out/
@@ -23,10 +28,28 @@
 
 # Debug and logs
 *.log
+=======
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+>>>>>>> 0a6a580 (feat: complete first release of TeeDee Edge Automations website)
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
@@ -36,3 +59,14 @@ next-env.d.ts
 *.pem
 .vscode/
 .idea/
+=======
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+>>>>>>> 0a6a580 (feat: complete first release of TeeDee Edge Automations website)

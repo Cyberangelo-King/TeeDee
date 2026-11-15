@@ -5,7 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+<<<<<<< HEAD
     "start": "next start"
+=======
+    "start": "next start",
+    "lint": "next lint"
+>>>>>>> 0a6a580 (feat: complete first release of TeeDee Edge Automations website)
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -25,4 +30,8 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0a6a580 (feat: complete first release of TeeDee Edge Automations website)
