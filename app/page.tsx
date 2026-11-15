@@ -47,6 +47,33 @@ const services = [
   },
 ];
 
+const industries = [
+  {
+    number: "01",
+    title: "Homes & estates",
+    description: "Security, controlled entry and dependable power for private properties and shared residential spaces.",
+    image: "/images/industries/residential.svg",
+  },
+  {
+    number: "02",
+    title: "Offices & retail",
+    description: "Surveillance, access management, networking and power planned around daily operations.",
+    image: "/images/industries/commercial.svg",
+  },
+  {
+    number: "03",
+    title: "Hotels & short lets",
+    description: "Entry systems, common-area security and practical technology for guest-facing environments.",
+    image: "/images/industries/hospitality.svg",
+  },
+  {
+    number: "04",
+    title: "Schools & facilities",
+    description: "Site-wide security, connectivity and essential systems for busy shared environments.",
+    image: "/images/industries/industrial.svg",
+  },
+];
+
 const process = [
   ["01", "Understand", "We learn how the site works, what matters to you and what the system needs to achieve."],
   ["02", "Plan", "We translate the brief into a practical scope, site requirements and a considered delivery plan."],
@@ -77,6 +104,7 @@ export default function Home() {
           </a>
           <nav className="nav" aria-label="Main navigation">
             <a href="#services">What we do</a>
+            <a href="#industries">Where we work</a>
             <a href="#approach">Our approach</a>
             <a href="#about">Why TeeDee</a>
           </nav>
@@ -85,6 +113,7 @@ export default function Home() {
             <summary aria-label="Open navigation">Menu <span>+</span></summary>
             <nav aria-label="Mobile navigation">
               <a href="#services">What we do</a>
+              <a href="#industries">Where we work</a>
               <a href="#approach">Our approach</a>
               <a href="#about">Why TeeDee</a>
               <a href="#contact">Contact</a>
@@ -163,6 +192,27 @@ export default function Home() {
           <p className="scope-note">The exact scope, specifications and availability of each service are confirmed during project discovery.</p>
         </section>
 
+        <section className="section industries-section" id="industries">
+          <div className="section-heading">
+            <div><span className="eyebrow">Where the work happens</span><h2>Different spaces.<br /><em>Different demands.</em></h2></div>
+            <p>The right system depends on the people, property and activity it needs to support. We shape the scope around the environment.</p>
+          </div>
+          <div className="industry-grid">
+            {industries.map((industry) => (
+              <article className="industry-card" key={industry.number}>
+                <div className="industry-image">
+                  <img src={industry.image} alt="" loading="lazy" width="800" height="600" />
+                  <span>{industry.number} / ENVIRONMENT</span>
+                </div>
+                <div className="industry-copy">
+                  <h3>{industry.title}</h3>
+                  <p>{industry.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className="section approach-section" id="approach">
           <div className="section-heading">
             <div><span className="eyebrow">How we work</span><h2>Clarity at every<br /><em>stage.</em></h2></div>
@@ -203,7 +253,7 @@ export default function Home() {
             <h2>Tell us what<br />needs to <em>work better.</em></h2>
             <p>Tell us what you need, where the work is located and what you want the system to do. The team can review the brief and discuss a practical next step.</p>
             <div className="contact-aside"><span className="contact-aside-line" /><span>A CLEAR BRIEF MAKES FOR A BETTER FIRST CONVERSATION.</span></div>
-            <div className="direct-contact"><a href="tel:+2348068999442">+234 806 899 9442</a><a href="mailto:info@teedeeedgeautomations.com">info@teedeeedgeautomations.com</a><a href="https://wa.me/2348068999442" target="_blank" rel="noreferrer">WhatsApp the team ↗</a></div>
+            <div className="direct-contact"><a href="tel:+2348068999442">+234 806 899 9442</a><a href="tel:+2349047214125">+234 904 721 4125</a><a href="mailto:info@teedeeedgeautomations.com">info@teedeeedgeautomations.com</a><a href="https://wa.me/2348068999442" target="_blank" rel="noreferrer">WhatsApp the team ↗</a></div>
           </div>
           <form className="form" name="project-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
             <input type="hidden" name="form-name" value="project-enquiry" />
@@ -224,7 +274,7 @@ export default function Home() {
         <div className="wrap footer-main">
           <a className="brand footer-brand" href="#home"><img className="brand-logo" src="/brand/logo-light.svg" alt="TeeDee Edge Automations" width="260" height="80" /></a>
           <p>Integrated technology.<br />Thoughtfully delivered.</p>
-          <div className="footer-nav"><a href="#services">Capabilities</a><a href="#approach">Our approach</a><a href="#contact">Contact</a><a href="/privacy">Privacy notice</a></div>
+          <div className="footer-nav"><a href="#services">Capabilities</a><a href="#industries">Where we work</a><a href="#approach">Our approach</a><a href="#contact">Contact</a><a href="/privacy">Privacy notice</a></div>
           <a href="#home" className="back-top">BACK TO TOP <ArrowUpRight size={14} /></a>
         </div>
         <div className="wrap footer-bottom"><span>© {new Date().getFullYear()} TeeDee Edge Automations Ltd. · RC 8231485</span><span>SECURE. POWER. AUTOMATE.</span></div>
