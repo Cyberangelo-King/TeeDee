@@ -73,8 +73,7 @@ export default function Home() {
       <div className="wrap">
         <header className="header">
           <a className="brand" href="#home" aria-label="TeeDee Edge Automations home">
-            <span className="brand-mark"><CircuitBoard size={20} strokeWidth={1.5} /></span>
-            <span className="brand-name">TEEDEE<span>.</span><small>EDGE AUTOMATIONS</small></span>
+            <img className="brand-logo" src="/brand/logo-light.svg" alt="TeeDee Edge Automations" width="260" height="80" />
           </a>
           <nav className="nav" aria-label="Main navigation">
             <a href="#services">What we do</a>
@@ -223,7 +222,7 @@ export default function Home() {
 
       <footer className="footer">
         <div className="wrap footer-main">
-          <a className="brand footer-brand" href="#home"><span className="brand-mark"><CircuitBoard size={20} strokeWidth={1.5} /></span><span className="brand-name">TEEDEE<span>.</span><small>EDGE AUTOMATIONS</small></span></a>
+          <a className="brand footer-brand" href="#home"><img className="brand-logo" src="/brand/logo-light.svg" alt="TeeDee Edge Automations" width="260" height="80" /></a>
           <p>Integrated technology.<br />Thoughtfully delivered.</p>
           <div className="footer-nav"><a href="#services">Capabilities</a><a href="#approach">Our approach</a><a href="#contact">Contact</a><a href="/privacy">Privacy notice</a></div>
           <a href="#home" className="back-top">BACK TO TOP <ArrowUpRight size={14} /></a>
