@@ -128,6 +128,7 @@ export default function Home() {
             <p className="hero-lede">We plan and install the systems that help homes, workplaces and facilities stay protected, powered and connected. The work starts with your site, your priorities and the conditions the installation must handle.</p>
             <div className="hero-actions">
               <a className="button" href="#contact">Talk to our team <ArrowUpRight size={16} /></a>
+              <a className="whatsapp-link" href="https://wa.me/2348068999442" target="_blank" rel="noreferrer">Chat on WhatsApp <ArrowUpRight size={15} /></a>
               <a className="text-link" href="#services">Explore capabilities <ArrowDownRight size={15} /></a>
             </div>
             <div className="hero-footnote"><span className="hero-line" /> From first conversation to final handover.</div>
