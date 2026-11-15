@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://teedeeedge.netlify.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://teedeeedge.netlify.app"),
+  alternates: { canonical: "/" },
   title: {
     default: "TeeDee Edge Automations | Integrated Technology, Thoughtfully Delivered",
     template: "%s | TeeDee Edge Automations",
