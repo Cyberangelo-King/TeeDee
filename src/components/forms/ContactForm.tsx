@@ -39,7 +39,7 @@ export function ContactForm() {
     <div className="bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
       {status === "success" ? (
         <div className="py-8 text-center space-y-4">
-          <div className="h-14 w-14 rounded-full bg-green-100 text-green-600 mx-auto flex items-center justify-center">
+          <div className="h-14 w-14 rounded-full bg-red-100 text-td-red mx-auto flex items-center justify-center">
             <CheckCircle2 className="h-8 w-8" />
           </div>
           <h3 className="font-display text-2xl font-bold text-td-graphite">
@@ -70,7 +70,8 @@ export function ContactForm() {
           </div>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-5">\n          {status === "error" && <div role="alert" className="flex items-start gap-2 rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900"><AlertCircle className="mt-0.5 h-4 w-4 shrink-0" /><span>Your browser blocked the WhatsApp window. <a className="font-semibold underline" href={createWhatsAppLink()} target="_blank" rel="noreferrer">Open your prepared enquiry manually</a>.</span></div>}
+        <form onSubmit={handleSubmit} className="space-y-5">
+          {status === "error" && <div role="alert" className="flex items-start gap-2 rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-900"><AlertCircle className="mt-0.5 h-4 w-4 shrink-0" /><span>Your browser blocked the WhatsApp window. <a className="font-semibold underline" href={createWhatsAppLink()} target="_blank" rel="noreferrer">Open your prepared enquiry manually</a>.</span></div>}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label
