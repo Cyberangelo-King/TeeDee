@@ -1,12 +1,20 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "Enquiry received",
+  robots: { index: false, follow: false },
+};
+
 export default function ThankYou() {
-  return <main style={{minHeight:"100vh",display:"grid",placeItems:"center",padding:24,background:"#111714",color:"#f3f2ec",fontFamily:"Manrope, sans-serif"}}>
-    <div style={{maxWidth:560}}>
-      <p style={{fontFamily:"monospace",letterSpacing:".14em",color:"#c5f36a",fontSize:11}}>TEEDEE / ENQUIRY RECEIVED</p>
-      <h1 style={{fontSize:"clamp(42px,8vw,72px)",letterSpacing:"-.07em",lineHeight:1}}>Thank you.<br/>We have your note.</h1>
-      <p style={{color:"#aab5aa",lineHeight:1.8}}>Your enquiry has been submitted. The team can review the details and follow up using the contact information you provided.</p>
-      <Link href="/" style={{display:"inline-block",marginTop:24,background:"#c5f36a",color:"#111714",padding:"14px 18px",fontSize:12,fontWeight:800}}>Back to home ↗</Link>
-    </div>
-  </main>;
+  return (
+    <main className="confirmation-page">
+      <div className="confirmation-card">
+        <p className="eyebrow">TEEDEE / ENQUIRY RECEIVED</p>
+        <h1>Thank you.<br />We have your note.</h1>
+        <p>Your enquiry has been submitted. The team can review the details and follow up using the contact information you provided.</p>
+        <p className="confirmation-note">If your request is urgent, you can reach the team directly at <a href="tel:+2348068999442">+234 806 899 9442</a>.</p>
+        <Link href="/" className="button">Back to the website <span aria-hidden="true">↗</span></Link>
+      </div>
+    </main>
+  );
 }
