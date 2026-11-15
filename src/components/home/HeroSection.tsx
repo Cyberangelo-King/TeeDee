@@ -62,7 +62,7 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-[90vh] lg:min-h-screen flex flex-col justify-between overflow-hidden bg-td-graphite-dark text-white pt-20 pb-12">
-      {/* Background Video / Tech Poster Layer */}
+      {/* Presentation-only reference footage. Replace with owned/licensed media before production launch. */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
@@ -76,7 +76,7 @@ export function HeroSection() {
           poster="/images/services/cctv.svg"
         >
           <source
-            src="https://madebydesignesia.com/themes/ucam/video/2.mp4"
+            src={process.env.NEXT_PUBLIC_HERO_VIDEO_URL || "https://madebydesignesia.com/themes/ucam/video/2.mp4"}
             type="video/mp4"
           />
         </video>
