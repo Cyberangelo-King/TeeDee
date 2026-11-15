@@ -65,7 +65,7 @@ export default function Home() {
     <main>
       <div className="topline">
         <div className="wrap topline-inner">
-          <span><i className="status-dot" /> Technology, thoughtfully connected.</span>
+          <span><i className="status-dot" /> SECURE. POWER. AUTOMATE.</span>
           <span className="topline-right">TEEDEE EDGE AUTOMATIONS LTD <span className="topline-divider">/</span> PROJECT ENQUIRIES OPEN</span>
         </div>
       </div>
@@ -95,9 +95,9 @@ export default function Home() {
 
         <section className="hero" id="home">
           <div className="hero-copy">
-            <span className="eyebrow">Integrated technology. Real-world thinking.</span>
+            <span className="eyebrow">SECURITY, POWER AND AUTOMATION. CONNECTED.</span>
             <h1>Make every<br />connection <em>count.</em></h1>
-            <p className="hero-lede">Technology should make a space work better. We bring security, connectivity and power systems together through considered planning and practical installation.</p>
+            <p className="hero-lede">We plan and install the systems that help homes, workplaces and facilities stay protected, powered and connected. The work starts with your site, your priorities and the conditions the installation must handle.</p>
             <div className="hero-actions">
               <a className="button" href="#contact">Talk to our team <ArrowUpRight size={16} /></a>
               <a className="text-link" href="#services">Explore capabilities <ArrowDownRight size={15} /></a>
@@ -128,8 +128,8 @@ export default function Home() {
         <div className="wrap intro-grid">
           <div className="intro-label"><span className="eyebrow dark-eyebrow">The TeeDee perspective</span><span className="intro-index">01 — A BETTER WAY TO CONNECT</span></div>
           <div className="intro-content">
-            <h2>Good technology is more than equipment. <span>It is how everything works together.</span></h2>
-            <p>Every site has its own demands. The right solution starts by understanding the environment, selecting what fits and making sure the finished system is practical to use, maintain and build on.</p>
+            <h2>A system is only as useful as <span>the way it works in the space around it.</span></h2>
+            <p>We look at the site, the people who will use the system and the problem it needs to solve. That shapes the specification, installation plan and handover. No package should be chosen before the requirements are understood.</p>
             <div className="intro-points">
               <div><ShieldCheck size={18} /><span>Considered system planning</span></div>
               <div><ClipboardCheck size={18} /><span>Clear delivery and handover</span></div>
@@ -143,7 +143,7 @@ export default function Home() {
         <section className="section services-section" id="services">
           <div className="section-heading">
             <div><span className="eyebrow">What we work on</span><h2>Technology with<br /><em>a job to do.</em></h2></div>
-            <p>From a single system to a more connected environment, the work begins with your requirements — not a one-size-fits-all package.</p>
+            <p>We begin with the job to be done. That may mean one installation or several systems planned to work together.</p>
           </div>
           <div className="service-grid">
             {services.map((service) => {
@@ -163,7 +163,7 @@ export default function Home() {
         <section className="section approach-section" id="approach">
           <div className="section-heading">
             <div><span className="eyebrow">How we work</span><h2>Clarity at every<br /><em>stage.</em></h2></div>
-            <p>A good installation is the result of good decisions made before, during and after the work itself.</p>
+            <p>The quality of an installation is shaped long before the equipment is switched on. These are the steps we use to keep the work clear.</p>
           </div>
           <div className="process-grid">
             {process.map(([number, title, description]) => <article className="process-step" key={number}>
@@ -178,7 +178,7 @@ export default function Home() {
         <section className="commitment">
           <div className="commitment-mark"><Check size={22} /></div>
           <div><span className="eyebrow">The standard we work towards</span><h2>Installed with care.<br /><em>Understood by the people who use it.</em></h2></div>
-          <p>We believe the job is not finished when the equipment is switched on. A useful result is one that people can operate confidently and maintain with clarity.</p>
+          <p>A completed installation should make sense to the people responsible for it. We aim to leave clients with a system they can use, understand and maintain.</p>
         </section>
 
         <section className="section faq-section">
@@ -198,8 +198,9 @@ export default function Home() {
           <div className="contact-copy">
             <span className="eyebrow">Start a conversation</span>
             <h2>Tell us what<br />needs to <em>work better.</em></h2>
-            <p>Share a little about your site, your requirements or the challenge you are facing. We will use the details to understand the request and identify a sensible next step.</p>
-            <div className="contact-aside"><span className="contact-aside-line" /><span>NO PRESSURE. JUST A USEFUL FIRST CONVERSATION.</span></div>
+            <p>Tell us what you need, where the work is located and what you want the system to do. The team can review the brief and discuss a practical next step.</p>
+            <div className="contact-aside"><span className="contact-aside-line" /><span>A CLEAR BRIEF MAKES FOR A BETTER FIRST CONVERSATION.</span></div>
+            <div className="direct-contact"><a href="tel:+2348068999442">+234 806 899 9442</a><a href="mailto:info@teedeeedgeautomations.com">info@teedeeedgeautomations.com</a><a href="https://wa.me/2348068999442" target="_blank" rel="noreferrer">WhatsApp the team ↗</a></div>
           </div>
           <form className="form" name="project-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
             <input type="hidden" name="form-name" value="project-enquiry" />
@@ -220,10 +221,10 @@ export default function Home() {
         <div className="wrap footer-main">
           <a className="brand footer-brand" href="#home"><span className="brand-mark"><CircuitBoard size={20} strokeWidth={1.5} /></span><span className="brand-name">TEEDEE<span>.</span><small>EDGE AUTOMATIONS</small></span></a>
           <p>Integrated technology.<br />Thoughtfully delivered.</p>
-          <div className="footer-nav"><a href="#services">Capabilities</a><a href="#approach">Our approach</a><a href="#contact">Contact</a></div>
+          <div className="footer-nav"><a href="#services">Capabilities</a><a href="#approach">Our approach</a><a href="#contact">Contact</a><a href="/privacy">Privacy notice</a></div>
           <a href="#home" className="back-top">BACK TO TOP <ArrowUpRight size={14} /></a>
         </div>
-        <div className="wrap footer-bottom"><span>© {new Date().getFullYear()} TeeDee Edge Automations Ltd.</span><span>BUILT AROUND THE WAY YOU WORK.</span></div>
+        <div className="wrap footer-bottom"><span>© {new Date().getFullYear()} TeeDee Edge Automations Ltd. · RC 8231485</span><span>SECURE. POWER. AUTOMATE.</span></div>
       </footer>
     </main>
   );
