@@ -73,7 +73,7 @@ export function HeroSection() {
             isVideoLoaded ? "opacity-35" : "opacity-0"
           }`}
           onLoadedData={() => setIsVideoLoaded(true)}
-          poster="/images/services/cctv.webp"
+          poster="/images/services/cctv.svg"
         >
           <source
             src="https://madebydesignesia.com/themes/ucam/video/2.mp4"
