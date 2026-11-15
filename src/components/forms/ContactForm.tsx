@@ -23,7 +23,8 @@ export function ContactForm() {
     setStatus("submitting");
 
     // A prepared WhatsApp message is not a received enquiry. The visitor must send it.
-    const popup = window.open(createWhatsAppLink(), "_blank", "noopener,noreferrer");
+    const popup = window.open(createWhatsAppLink(), "_blank");
+    if (popup) popup.opener = null;
     setStatus(popup ? "success" : "error");
   };
 
