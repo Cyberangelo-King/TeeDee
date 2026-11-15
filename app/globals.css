@@ -236,3 +236,7 @@ button,input,textarea,select{font:inherit}
 @media(max-width:900px){.industry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.visual-video{display:none}.industry-grid{gap:12px}}
 @media(max-width:460px){.industry-grid{grid-template-columns:1fr}.industry-copy{padding:18px}}
+
+
+.whatsapp-link{display:inline-flex;align-items:center;gap:8px;padding:12px 0;color:#D5D7D3;font-size:11px;font-weight:700;border-bottom:1px solid #E57A2F77;transition:color .2s,border-color .2s}
+.whatsapp-link:hover{color:var(--signal-orange);border-color:var(--signal-orange)}
