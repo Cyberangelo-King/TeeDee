@@ -105,7 +105,11 @@ export default function Home() {
             <div className="hero-footnote"><span className="hero-line" /> From first conversation to final handover.</div>
           </div>
 
-          <div className="hero-visual" aria-label="Abstract visual representing connected technology systems">
+          <div className="hero-visual" aria-label="Connected security, power and network systems">
+            <video className="visual-video" autoPlay muted loop playsInline preload="metadata" poster="/images/services/cctv.svg" aria-hidden="true">
+              <source src={process.env.NEXT_PUBLIC_HERO_VIDEO_URL || "https://madebydesignesia.com/themes/ucam/video/2.mp4"} type="video/mp4" />
+            </video>
+            <div className="visual-video-overlay" />
             <div className="visual-grid" />
             <div className="visual-ring ring-a" />
             <div className="visual-ring ring-b" />
