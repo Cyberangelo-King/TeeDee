@@ -240,3 +240,14 @@ button,input,textarea,select{font:inherit}
 
 .whatsapp-link{display:inline-flex;align-items:center;gap:8px;padding:12px 0;color:#D5D7D3;font-size:11px;font-weight:700;border-bottom:1px solid #E57A2F77;transition:color .2s,border-color .2s}
 .whatsapp-link:hover{color:var(--signal-orange);border-color:var(--signal-orange)}
+
+
+.visual-ring.ring-a{animation:ring-drift 34s linear infinite}
+.visual-ring.ring-b{animation:ring-drift 42s linear infinite reverse}
+.visual-ring.ring-c{animation:ring-drift 28s linear infinite}
+.visual-node.node-a{animation:node-drift 7s ease-in-out infinite}
+.visual-node.node-b{animation:node-drift 8s 1s ease-in-out infinite}
+.visual-node.node-c{animation:node-drift 9s .5s ease-in-out infinite}
+@keyframes ring-drift{from{rotate:0deg}to{rotate:360deg}}
+@keyframes node-drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@media(prefers-reduced-motion:reduce){.visual-ring,.visual-node{animation:none!important}}
