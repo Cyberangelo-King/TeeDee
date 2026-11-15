@@ -159,7 +159,7 @@ export default function Home() {
 
       <section className="intro-band" id="about">
         <div className="wrap intro-grid">
-          <div className="intro-label"><span className="eyebrow dark-eyebrow">The TeeDee perspective</span><span className="intro-index">01 — A BETTER WAY TO CONNECT</span></div>
+          <div className="intro-label"><span className="eyebrow dark-eyebrow">The TeeDee perspective</span><span className="intro-index">01 / A BETTER WAY TO CONNECT</span></div>
           <div className="intro-content">
             <h2>A system is only as useful as <span>the way it works in the space around it.</span></h2>
             <p>We look at the site, the people who will use the system and the problem it needs to solve. That shapes the specification, installation plan and handover. No package should be chosen before the requirements are understood.</p>
@@ -259,7 +259,7 @@ export default function Home() {
           <form className="form" name="project-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
             <input type="hidden" name="form-name" value="project-enquiry" />
             <p className="hidden-field"><label>Leave this field empty: <input name="bot-field" /></label></p>
-            <div className="form-heading"><span>PROJECT ENQUIRY</span><span>01 — 04</span></div>
+            <div className="form-heading"><span>PROJECT ENQUIRY</span><span>01 / 04</span></div>
             <div className="field"><label htmlFor="name">Your name <b>*</b></label><input id="name" name="name" autoComplete="name" required placeholder="How should we address you?" /></div>
             <div className="field"><label htmlFor="email">Email address <b>*</b></label><input id="email" name="email" type="email" autoComplete="email" required placeholder="you@example.com" /></div>
             <div className="field"><label htmlFor="organisation">Company / organisation</label><input id="organisation" name="organisation" autoComplete="organization" placeholder="Where are you based?" /></div>
