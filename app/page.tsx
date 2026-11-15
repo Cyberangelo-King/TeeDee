@@ -255,6 +255,10 @@ export default function Home() {
             <p>Tell us what you need, where the work is located and what you want the system to do. The team can review the brief and discuss a practical next step.</p>
             <div className="contact-aside"><span className="contact-aside-line" /><span>A CLEAR BRIEF MAKES FOR A BETTER FIRST CONVERSATION.</span></div>
             <div className="direct-contact"><a href="tel:+2348068999442">+234 806 899 9442</a><a href="tel:+2349047214125">+234 904 721 4125</a><a href="mailto:info@teedeeedgeautomations.com">info@teedeeedgeautomations.com</a><a href="https://wa.me/2348068999442" target="_blank" rel="noreferrer">WhatsApp the team ↗</a></div>
+            <div className="office-list">
+              <div><span>HEAD OFFICE &amp; WORKSHOP / LAGOS</span><p>Block C/23, Binukonu Ultra Modern Complex, Ogudu Rd, Ojota, Lagos</p></div>
+              <div><span>FEDERAL CAPITAL BRANCH / ABUJA</span><p>Plot 1042 Kur Mohammed Street, Ekiti House, CBD, Abuja</p></div>
+            </div>
           </div>
           <form className="form" name="project-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
             <input type="hidden" name="form-name" value="project-enquiry" />
