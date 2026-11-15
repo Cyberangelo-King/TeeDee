@@ -251,3 +251,9 @@ button,input,textarea,select{font:inherit}
 @keyframes ring-drift{from{rotate:0deg}to{rotate:360deg}}
 @keyframes node-drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
 @media(prefers-reduced-motion:reduce){.visual-ring,.visual-node{animation:none!important}}
+
+
+.office-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}
+.office-list span{display:block;color:var(--signal-orange);font:8px var(--mono);letter-spacing:.09em;margin-bottom:10px}
+.office-list p{max-width:260px;color:#A6A9AE;font-size:10px;line-height:1.85;margin:0}
+@media(max-width:700px){.office-list{grid-template-columns:1fr;gap:18px}}
