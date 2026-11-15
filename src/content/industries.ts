@@ -18,7 +18,7 @@ export const industries: Industry[] = [
       "Automated Gate Systems with remote key fobs and video intercoms",
       "Smart Fingerprint Door Locks for keyless convenience",
     ],
-    image: "/images/industries/residential.webp",
+    image: "/images/industries/residential.svg",
   },
   {
     slug: "commercial",
@@ -37,7 +37,7 @@ export const industries: Industry[] = [
       "Pure Sine Inverter banks dedicated to server racks and workstations",
       "Cat6 Structured Cabling and enterprise WiFi mesh",
     ],
-    image: "/images/industries/commercial.webp",
+    image: "/images/industries/commercial.svg",
   },
   {
     slug: "property-hospitality",
@@ -56,7 +56,7 @@ export const industries: Industry[] = [
       "Common area HD CCTV monitoring parking, lobbies, and corridors",
       "Energy management switches linked to room card insertion",
     ],
-    image: "/images/industries/hospitality.webp",
+    image: "/images/industries/hospitality.svg",
   },
   {
     slug: "institutions",
@@ -75,6 +75,6 @@ export const industries: Industry[] = [
       "Heavy-duty Automated Sliding Gates & Boom Barriers",
       "Technical training for in-house facilities maintenance teams",
     ],
-    image: "/images/industries/industrial.webp",
+    image: "/images/industries/industrial.svg",
   },
 ];
