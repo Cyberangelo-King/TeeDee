@@ -1,52 +1,53 @@
-# TeeDee Edge Automations — Public Website
+# TeeDee Edge Automations LTD — Website
 
-The public website is the first delivery surface in the TeeDee digital operations programme.
+A presentation-ready company website built on Next.js 15, React 19 and TypeScript. The current deployment target is Netlify static hosting.
 
-## Live preview
-- Production: https://teedeeedge.netlify.app
-- Netlify project: https://app.netlify.com/projects/teedeeedge
+## Current application structure
 
-## Technology
-- Next.js 15 static export
-- React 19
-- TypeScript
-- Lucide icons
-- Netlify hosting and form handling
+- `app/` is the active Next.js App Router and contains the presentation website.
+- `src/` contains the earlier multi-page implementation and reusable service content retained for future product work. It is not the active route tree while the root `app/` directory exists.
+- `public/brand/` contains the supplied original logo/flyer and derived SVG brand assets.
+- `public/images/` contains brand-aligned SVG service and industry illustrations.
 
-## Website experience
-- Responsive public-facing company website
-- Capability overview: security and surveillance, network infrastructure, power and energy systems, and integrated technology
-- Delivery approach and project enquiry journey
-- FAQ content and accessible native disclosure interactions
-- Netlify Forms-compatible project enquiry form
-- Metadata, Open Graph and search indexing defaults
-- Reduced-motion support and keyboard focus states
-- Dedicated static thank-you and not-found pages
+Keep one Next.js config only: `next.config.ts`.
 
 ## Local development
 
+Node.js 22 is recommended.
+
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-## Production build
+## Build and deployment
 
 ```bash
 npm run build
 ```
 
-Next.js writes the complete static site to `out/`. Netlify publishes that directory. The application does not require a Next.js server runtime for its current public-site feature set.
+Next.js exports the static site to `out/`. Netlify publishes that directory using `netlify.toml`.
 
-## Deployment
-Netlify Forms processing is enabled for the project enquiry form. The project is configured for Netlify static export in `netlify.toml`; `NETLIFY_NEXT_PLUGIN_SKIP=true` prevents a server adapter from being injected into this static-only build.
+The project enquiry form uses Netlify Forms markup. It is processed only after the static site is deployed to Netlify and Netlify has detected the form. Configure form notifications in the Netlify project and submit a real test enquiry before presenting it as an operational lead channel.
 
-## Important launch checks
-The current public copy is intentionally conservative. Before treating the website as the final approved company profile, TeeDee should confirm:
-- Exact service catalogue and technical scope
-- Company contact details and official business address
-- Approved project photographs, case studies, certifications and client permissions
-- Privacy notice, data controller contact and enquiry retention process
-- Domain ownership and preferred primary domain
+## Presentation environment
 
-Do not add unverified credentials, project claims, testimonials, client logos or performance statistics.
+Copy `.env.example` to `.env.local` for local work, or configure the values in Netlify:
+
+- `NEXT_PUBLIC_SITE_URL`: canonical public URL.
+- `NEXT_PUBLIC_INDEX_SITE=false`: keeps the presentation deployment out of search results. Change to `true` only after launch approval.
+- `NEXT_PUBLIC_HERO_VIDEO_URL`: currently points to temporary Ucam reference footage for presentation use. It is not cleared for production use.
+
+The video is muted, loops, and has a local SVG poster/fallback. It is disabled for reduced-motion visitors and on smaller screens to avoid unnecessary mobile data use.
+
+## Before production launch
+
+1. Replace the temporary Ucam footage with TeeDee-owned or properly licensed footage. Do not ship the reference video as a production asset without rights confirmation.
+2. Set the canonical domain and `NEXT_PUBLIC_INDEX_SITE=true` after domain and launch approval.
+3. Configure Netlify form notifications, spam protection and the team inbox; submit a test enquiry.
+4. Review the privacy notice against the actual data-handling process and obtain appropriate legal review.
+5. Confirm current phone, email, service scope, locations, operating hours and response expectations.
+6. Replace vector service/industry illustrations with approved real project photography as it becomes available.
+7. Add case studies, client logos, testimonials, certifications and performance claims only with evidence and written permission.
+
+Do not add invented clients, projects, credentials, guarantees, response times or performance statistics.
