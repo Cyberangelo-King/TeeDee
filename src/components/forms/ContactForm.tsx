@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { CheckCircle2, Send, MessageSquare, AlertCircle } from "lucide-react";
+import { CheckCircle2, Send, MessageSquare } from "lucide-react";
 import { Button } from "../ui/Button";
 import { siteConfig } from "@/content/site";
 import { services } from "@/content/services";
@@ -218,17 +218,12 @@ export function ContactForm() {
               type="submit"
               variant="primary"
               size="lg"
-              className="w-full gap-2 shadow-lg shadow-td-red/20"
-              disabled={status === "submitting"}
+              className="w-full sm:w-auto gap-2"
             >
               <Send className="h-4 w-4" />
-              {status === "submitting" ? "Transmitting Request..." : "Submit Assessment Request"}
+              Send Inquiry
             </Button>
           </div>
-
-          <p className="text-[11px] text-slate-500 text-center font-mono pt-1">
-            We respect your privacy. No spam. You will speak directly with an authorized TeeDee Edge engineer.
-          </p>
         </form>
       )}
     </div>

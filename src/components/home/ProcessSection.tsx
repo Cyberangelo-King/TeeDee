@@ -41,8 +41,6 @@ export function ProcessSection() {
     <section className="bg-td-paper py-20 lg:py-24 border-b border-td-graphite/10" id="process">
       <Container>
         <SectionHeader
-          badge="Engineering Discipline"
-          badgeVariant="orange"
           title="How a Project Works"
           description="A structured, predictable 5-step delivery process designed to prevent project delays, unexpected variations, and untidy installations."
           align="center"

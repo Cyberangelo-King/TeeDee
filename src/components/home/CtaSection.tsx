@@ -6,35 +6,27 @@ import { siteConfig } from "@/content/site";
 
 export function CtaSection() {
   return (
-    <section className="bg-td-graphite-dark text-white py-20 lg:py-24 relative overflow-hidden border-t border-white/10">
-      {/* Background glow accents */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full pointer-events-none opacity-20">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-td-red rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-td-orange rounded-full blur-[120px]" />
-      </div>
+    <section className="relative overflow-hidden border-t border-white/10 bg-td-graphite-dark py-16 text-white sm:py-20 lg:py-24">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(179,38,50,0.18),transparent_45%)]" />
 
-      <Container className="relative z-10 text-center max-w-4xl">
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono font-semibold text-td-orange mb-6">
+      <Container className="relative z-10 mx-auto max-w-4xl text-center">
+        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.2em] text-td-orange">
           <ShieldCheck className="h-4 w-4 text-td-red" />
-          <span>READY TO SECURE & POWER YOUR PREMISES?</span>
+          Ready to secure and power your property?
         </div>
 
-        <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
-          Let’s design the right systems architecture for your property.
+        <h2 className="mt-6 font-display text-3xl font-extrabold tracking-[-0.06em] text-white sm:text-5xl lg:text-6xl">
+          Let’s design the right systems architecture for your space.
         </h2>
 
-        <p className="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Tell us about your property, security concerns, or backup power needs. We will arrange a practical site evaluation and prepare an itemized proposal.
+        <p className="mx-auto mt-5 max-w-2xl text-base text-slate-300 sm:text-lg">
+          Tell us about your property, your concerns or your power requirements and we’ll
+          advise on the practical next step.
         </p>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <Button
-            href="/contact"
-            variant="primary"
-            size="lg"
-            className="gap-2 shadow-xl shadow-td-red/25 px-8"
-          >
-            Request a Free Assessment
+        <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <Button href="/contact" variant="primary" size="lg" className="gap-2">
+            Request a free assessment
             <ArrowRight className="h-4 w-4" />
           </Button>
 
@@ -43,19 +35,19 @@ export function CtaSection() {
             variant="whatsapp"
             size="lg"
             external
-            className="gap-2 px-8"
+            className="gap-2"
           >
             <MessageSquare className="h-4 w-4" />
-            Chat on WhatsApp
+            WhatsApp chat
           </Button>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-8 text-xs font-mono text-slate-400">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-[10px] font-mono uppercase tracking-[0.16em] text-slate-400">
           <span>{siteConfig.rcNumber}</span>
-          <span>·</span>
-          <span>Lagos: Block C/23, Binukonu Complex, Ojota</span>
-          <span>·</span>
-          <span>Abuja: Ekiti House, CBD</span>
+          <span className="text-slate-600">•</span>
+          <span>Lagos</span>
+          <span className="text-slate-600">•</span>
+          <span>Abuja</span>
         </div>
       </Container>
     </section>

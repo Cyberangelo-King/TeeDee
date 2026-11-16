@@ -18,8 +18,6 @@ export function IndustrySection() {
       <Container>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <SectionHeader
-            badge="Target Sectors"
-            badgeVariant="red"
             title="Environments We Protect & Power"
             description="Tailored engineering architectures configured specifically for property owners, facilities leads, and institutional operations across Nigeria."
           />

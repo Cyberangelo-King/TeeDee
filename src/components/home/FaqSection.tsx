@@ -22,8 +22,6 @@ export function FaqSection() {
           {/* Left Column: Heading & Support Action (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
             <SectionHeader
-              badge="Frequently Asked Questions"
-              badgeVariant="orange"
               title="Planning Your Systems Installation"
               description="Clear, honest answers regarding site surveys, inverter sizing, equipment integration, and what happens after handover."
             />

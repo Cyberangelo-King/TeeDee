@@ -37,8 +37,6 @@ export function ServiceGrid() {
       <Container>
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <SectionHeader
-            badge="Verified Scope"
-            badgeVariant="red"
             title="Comprehensive Systems Engineering"
             description="All 10 integrated services advertised by TeeDee Edge Automations LTD, engineered for reliable performance under Nigerian environmental and utility conditions."
           />
@@ -69,7 +67,7 @@ export function ServiceGrid() {
                       <Icon className="h-6 w-6" />
                     </div>
                     <span className="font-mono text-xs font-bold text-slate-400">
-                      0{idx + 1} // 10
+                      0{idx + 1} / 10
                     </span>
                   </div>
 

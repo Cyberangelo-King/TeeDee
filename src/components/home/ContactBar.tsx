@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, MessageSquare, CalendarCheck, ShieldAlert } from "lucide-react";
+import { Phone, MessageSquare, CalendarCheck } from "lucide-react";
 import { Container } from "../layout/Container";
 import { siteConfig } from "@/content/site";
 

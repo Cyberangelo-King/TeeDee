@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import { ShieldCheck, Cpu, Wrench, CheckCircle, ArrowRight } from "lucide-react";
+import { ShieldCheck, CheckCircle } from "lucide-react";
 import { Container } from "../layout/Container";
 import { Badge } from "../ui/Badge";
 import { Button } from "../ui/Button";

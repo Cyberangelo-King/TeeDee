@@ -7,75 +7,74 @@ export function BrandStrip() {
   const pillars = [
     {
       icon: Shield,
-      title: "SECURE",
-      headline: "Multi-layered physical & electronic defense",
+      title: "Secure",
+      headline: "Multi-layered physical and electronic defense",
       detail:
-        "High-definition IP surveillance, perimeter electric fences, alarm detectors, and biometric access restrictions.",
+        "High-definition CCTV, perimeter protection and access control designed for real-world conditions.",
     },
     {
       icon: Zap,
-      title: "POWER",
-      headline: "Continuous pure sine solar & inverter backup",
+      title: "Power",
+      headline: "Uninterrupted solar and inverter backup",
       detail:
-        "Engineered lithium energy storage ensuring critical security and automated systems never shut down during blackouts.",
+        "Pure sine backup power that keeps critical systems running through voltage instability and outages.",
     },
     {
       icon: Cpu,
-      title: "AUTOMATE",
-      headline: "Effortless compound and building control",
+      title: "Automate",
+      headline: "Connected systems built around daily usability",
       detail:
-        "Heavy-duty remote gate motors, hotel card key locks, structured data networks, and central smart automation.",
+        "Gate control, smart locks and building automation that work together without friction.",
     },
   ];
 
   return (
-    <section className="bg-td-paper py-16 border-b border-td-graphite/10">
+    <section className="bg-td-paper py-16 sm:py-20">
       <Container>
-        {/* Brand Promise Banner */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between pb-10 border-b border-td-graphite/10 gap-6">
+        <div className="flex flex-col gap-5 border-b border-td-graphite/10 pb-8 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <span className="font-mono text-xs font-bold text-td-red uppercase tracking-wider">
-              The Strategic Proposition
-            </span>
-            <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-td-graphite mt-1">
+            <div className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-td-red">
+              The strategic proposition
+            </div>
+            <h2 className="mt-3 font-display text-3xl font-extrabold tracking-[-0.05em] text-td-graphite sm:text-4xl">
               Secure. Power. Automate.
             </h2>
           </div>
 
-          <div className="flex items-center gap-4 text-xs font-mono bg-white rounded-xl p-4 shadow-sm border border-td-graphite/10">
-            <CheckCircle2 className="h-5 w-5 text-td-orange flex-shrink-0" />
+          <div className="inline-flex items-center gap-3 rounded-2xl border border-td-graphite/10 bg-white px-4 py-3 shadow-sm">
+            <CheckCircle2 className="h-5 w-5 text-td-orange" />
             <div>
-              <div className="font-bold text-td-graphite">{siteConfig.name}</div>
-              <div className="text-slate-500">
-                Incorporated in Nigeria · {siteConfig.rcNumber}
+              <div className="font-display text-sm font-bold text-td-graphite">
+                {siteConfig.name}
+              </div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.16em] text-slate-500">
+                {siteConfig.rcNumber}
               </div>
             </div>
           </div>
         </div>
 
-        {/* 3 Pillars Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {pillars.map((pillar) => {
             const Icon = pillar.icon;
             return (
               <div
                 key={pillar.title}
-                className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-td-graphite/5 hover:border-td-red/30 transition-all duration-200 group flex flex-col justify-between"
+                className="soft-panel flex h-full flex-col p-6 transition-transform duration-200 hover:-translate-y-0.5"
               >
-                <div>
-                  <div className="h-12 w-12 rounded-xl bg-td-red/10 text-td-red flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
-                    <Icon className="h-6 w-6" />
-                  </div>
-                  <span className="font-mono text-xs font-bold text-td-orange tracking-widest">
-                    PILLAR // {pillar.title}
+                <div className="mb-5 flex items-center justify-between">
+                  <span className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-td-orange">
+                    {pillar.title}
                   </span>
-                  <h3 className="font-display text-xl font-bold text-td-graphite mt-2 mb-3">
-                    {pillar.headline}
-                  </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {pillar.detail}
-                  </p>
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-td-red/10 text-td-red">
+                    <Icon className="h-5 w-5" />
+                  </div>
                 </div>
+
+                <h3 className="font-display text-xl font-bold text-td-graphite">
+                  {pillar.headline}
+                </h3>
+                <p className="mt-4 text-sm text-slate-600">{pillar.detail}</p>
               </div>
             );
           })}

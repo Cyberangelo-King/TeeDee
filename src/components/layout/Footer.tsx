@@ -10,12 +10,10 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-td-graphite-dark text-slate-300 border-t border-white/10 pt-16 pb-8">
-      <Container>
-        {/* Main 4-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
-          {/* Col 1: Brand & Credentials (4 cols on lg) */}
-          <div className="lg:col-span-4 space-y-5">
+    <footer className="bg-td-graphite-dark text-slate-300">
+      <Container className="py-14 sm:py-16">
+        <div className="grid gap-10 border-b border-white/10 pb-10 md:grid-cols-2 lg:grid-cols-12">
+          <div className="lg:col-span-4">
             <Link href="/" className="inline-block">
               <div className="relative h-11 w-52">
                 <Image
@@ -27,153 +25,99 @@ export function Footer() {
               </div>
             </Link>
 
-            <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-              Practical systems partner for integrated CCTV surveillance, pure sine solar inverter power, biometric access control, automated gates, and building automation across Nigeria.
+            <p className="mt-5 max-w-sm text-sm text-slate-400">
+              Practical systems partner for integrated CCTV surveillance, solar and inverter
+              power, biometric access control, automated gates and building automation across
+              Nigeria.
             </p>
 
-            <div className="inline-flex items-center gap-2 rounded-lg bg-white/5 border border-white/10 px-3.5 py-1.5 font-mono text-xs text-td-orange font-semibold">
+            <div className="mt-5 inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.16em] text-td-orange">
               <ShieldCheck className="h-4 w-4 text-td-red" />
-              Corporate CAC Registration: {siteConfig.rcNumber}
+              {siteConfig.rcNumber}
             </div>
 
-            <div className="pt-2">
+            <div className="mt-5">
               <a
                 href={`https://wa.me/${siteConfig.whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-[#25D366] hover:underline"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#25D366] hover:text-[#20BD5A]"
               >
                 <MessageSquare className="h-4 w-4" />
-                Chat with an engineer on WhatsApp &rarr;
+                Chat with an engineer
               </a>
             </div>
           </div>
 
-          {/* Col 2: Services Directory (3 cols on lg) */}
-          <div className="lg:col-span-3 space-y-4">
-            <h3 className="font-display text-sm font-bold text-white uppercase tracking-wider">
-              Approved Services
+          <div className="lg:col-span-3">
+            <h3 className="font-display text-sm font-bold uppercase tracking-[0.18em] text-white">
+              Services
             </h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="mt-5 space-y-2.5 text-sm">
               {services.slice(0, 7).map((service) => (
                 <li key={service.slug}>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="text-slate-400 hover:text-white transition-colors flex items-center gap-1.5 group"
-                  >
-                    <span className="text-td-red opacity-0 group-hover:opacity-100 transition-opacity">
-                      &rsaquo;
-                    </span>
+                  <Link href={`/services/${service.slug}`} className="text-slate-400 transition-colors hover:text-white">
                     {service.title}
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  href="/services"
-                  className="text-td-orange font-semibold hover:underline inline-flex items-center gap-1 pt-1"
-                >
-                  View all 10 services <ArrowRight className="h-3 w-3" />
+              <li className="pt-1">
+                <Link href="/services" className="inline-flex items-center gap-2 font-semibold text-td-orange hover:text-td-red">
+                  View all services <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Company & Sectors (2 cols on lg) */}
-          <div className="lg:col-span-2 space-y-4">
-            <h3 className="font-display text-sm font-bold text-white uppercase tracking-wider">
-              Navigation
+          <div className="lg:col-span-2">
+            <h3 className="font-display text-sm font-bold uppercase tracking-[0.18em] text-white">
+              Navigate
             </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/" className="text-slate-400 hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-slate-400 hover:text-white transition-colors">
-                  About TeeDee Edge
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-slate-400 hover:text-white transition-colors">
-                  Services Overview
-                </Link>
-              </li>
-              <li>
-                <Link href="/industries" className="text-slate-400 hover:text-white transition-colors">
-                  Sectors & Environments
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
-                  Request Site Survey
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
+            <ul className="mt-5 space-y-2.5 text-sm">
+              <li><Link href="/" className="text-slate-400 hover:text-white">Home</Link></li>
+              <li><Link href="/about" className="text-slate-400 hover:text-white">About</Link></li>
+              <li><Link href="/services" className="text-slate-400 hover:text-white">Services</Link></li>
+              <li><Link href="/industries" className="text-slate-400 hover:text-white">Industries</Link></li>
+              <li><Link href="/contact" className="text-slate-400 hover:text-white">Contact</Link></li>
+              <li><Link href="/privacy" className="text-slate-400 hover:text-white">Privacy</Link></li>
             </ul>
           </div>
 
-          {/* Col 4: Verified Contact & Locations (3 cols on lg) */}
-          <div className="lg:col-span-3 space-y-4">
-            <h3 className="font-display text-sm font-bold text-white uppercase tracking-wider">
-              Verified Locations
+          <div className="lg:col-span-3">
+            <h3 className="font-display text-sm font-bold uppercase tracking-[0.18em] text-white">
+              Offices
             </h3>
-            
-            <div className="space-y-4 text-xs">
+
+            <div className="mt-5 space-y-4 text-sm">
               {siteConfig.offices.map((office) => (
-                <div key={office.city} className="space-y-1">
-                  <div className="font-semibold text-white flex items-center gap-1.5">
-                    <MapPin className="h-3.5 w-3.5 text-td-red" />
-                    {office.city} Office
+                <div key={office.city}>
+                  <div className="flex items-center gap-2 font-display font-bold text-white">
+                    <MapPin className="h-4 w-4 text-td-red" />
+                    {office.city}
                   </div>
-                  <p className="text-slate-400 leading-relaxed pl-5">
-                    {office.address}
-                  </p>
+                  <p className="mt-1 text-slate-400">{office.address}</p>
                 </div>
               ))}
             </div>
 
-            <div className="pt-3 border-t border-white/10 space-y-2 text-xs">
-              <a
-                href={`tel:${siteConfig.phonePrimary}`}
-                className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
-              >
-                <Phone className="h-3.5 w-3.5 text-td-orange" />
+            <div className="mt-5 space-y-2 text-sm text-slate-300">
+              <a href={`tel:${siteConfig.phonePrimary}`} className="flex items-center gap-2 hover:text-white">
+                <Phone className="h-4 w-4 text-td-orange" />
                 {siteConfig.phonePrimaryDisplay}
               </a>
-              <a
-                href={`tel:${siteConfig.phoneSecondary}`}
-                className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors"
-              >
-                <Phone className="h-3.5 w-3.5 text-td-orange" />
-                {siteConfig.phoneSecondaryDisplay}
-              </a>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="flex items-center gap-2 text-slate-300 hover:text-white transition-colors truncate"
-              >
-                <Mail className="h-3.5 w-3.5 text-td-orange" />
+              <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 truncate hover:text-white">
+                <Mail className="h-4 w-4 text-td-orange" />
                 {siteConfig.email}
               </a>
             </div>
           </div>
         </div>
 
-        {/* Bottom Legal Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono">
-          <p>
-            &copy; {currentYear} {siteConfig.name}. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6">
-            <span className="text-slate-400">{siteConfig.brandLine}</span>
-            <Link href="/privacy" className="hover:text-slate-300 transition-colors">
-              Privacy Notice
-            </Link>
+        <div className="flex flex-col gap-3 pt-8 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {currentYear} {siteConfig.name}. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <span className="font-mono uppercase tracking-[0.18em] text-slate-400">{siteConfig.brandLine}</span>
+            <Link href="/privacy" className="hover:text-slate-300">Privacy Notice</Link>
           </div>
         </div>
       </Container>

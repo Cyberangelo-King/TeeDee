@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { ArrowLeft, ShieldAlert } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";

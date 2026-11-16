@@ -1,16 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import Link from "next/link";
-import {
-  ShieldCheck,
-  MapPin,
-  CheckCircle,
-  Wrench,
-  Zap,
-  PhoneCall,
-  MessageSquare,
-  ArrowRight,
-} from "lucide-react";
+import { ShieldCheck, MapPin, PhoneCall, MessageSquare, ArrowRight } from "lucide-react";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/content/site";
@@ -18,116 +8,113 @@ import { siteConfig } from "@/content/site";
 export const metadata: Metadata = {
   title: "About TeeDee Edge Automations LTD",
   description:
-    "Registered Nigerian systems partner (RC: 8231485) engineering electronic security, pure sine solar inverter energy, and smart automation across Lagos and Abuja.",
+    "Registered Nigerian systems partner engineering electronic security, pure sine solar inverter energy, and smart automation across Lagos and Abuja.",
 };
 
 export default function AboutPage() {
   return (
     <div className="bg-white">
-      {/* Hero */}
-      <section className="bg-td-graphite text-white py-20 lg:py-24 border-b border-white/10 relative overflow-hidden">
-        <Container className="relative z-10">
-          <div className="max-w-3xl space-y-4">
-            <div className="inline-flex items-center gap-2 rounded-full border border-td-red/30 bg-td-red/10 px-3.5 py-1 text-xs font-mono font-semibold text-white">
-              <span className="h-1.5 w-1.5 rounded-full bg-td-red animate-pulse" />
-              COMPANY PROFILE // RC: 8231485
+      <section className="border-b border-white/10 bg-td-graphite py-16 text-white sm:py-20 lg:py-24">
+        <Container>
+          <div className="max-w-3xl space-y-5">
+            <div className="inline-flex items-center gap-2 rounded-full border border-td-red/30 bg-td-red/10 px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-white">
+              <span className="h-1.5 w-1.5 rounded-full bg-td-red" />
+              Company profile // RC 8231485
             </div>
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-              Engineering That Protects, Powers and Connects
+            <h1 className="font-display text-4xl font-extrabold tracking-[-0.06em] text-white sm:text-5xl lg:text-6xl">
+              Engineering that protects, powers and connects.
             </h1>
-            <p className="text-lg text-slate-300 leading-relaxed font-normal">
-              TeeDee Edge Automations LTD is a dedicated physical and electronic systems partner. We build reliable electronic security, renewable backup power, and building automation architectures for clients who value workmanship, safety, and long-term durability.
+            <p className="max-w-2xl text-base text-slate-300 sm:text-lg">
+              TeeDee Edge Automations LTD is a dedicated electronic systems partner helping
+              homes, estates and businesses deploy reliable security, solar backup power and
+              smart automation without the usual disconnect between equipment and outcome.
             </p>
           </div>
         </Container>
       </section>
 
-      {/* Corporate Overview & Foundation */}
-      <section className="py-20 lg:py-24">
+      <section className="py-16 sm:py-20 lg:py-24">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 space-y-6">
-              <span className="font-mono text-xs font-bold text-td-red uppercase tracking-wider block">
-                OUR ENGINEERING PHILOSOPHY
-              </span>
+          <div className="grid items-center gap-10 lg:grid-cols-12">
+            <div className="space-y-6 lg:col-span-7">
+              <div className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-td-red">
+                Our engineering philosophy
+              </div>
 
-              <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-td-graphite leading-tight">
-                Why Disconnected Systems Fail in Nigeria
+              <h2 className="font-display text-3xl font-extrabold tracking-[-0.05em] text-td-graphite sm:text-4xl">
+                Why disconnected systems fail in practical operations.
               </h2>
 
-              <p className="text-base text-slate-600 leading-relaxed">
-                In many Nigerian properties, security cameras are bought from one shop, an inverter from another, an electric fence from a third technician, and gate automation from a metal fabricator. When an electrical fault occurs or power fails at 2:00 AM, nobody takes responsibility, and critical cameras go dark.
+              <p className="text-base text-slate-600">
+                In many Nigerian properties, security cameras, solar backup, gate motors and
+                alarm systems are bought and installed by different parties with no single source
+                of accountability. When power fails or a system stops reporting during a critical
+                period, the result is often downtime, confusion and expensive rework.
               </p>
 
-              <p className="text-base text-slate-600 leading-relaxed">
-                TeeDee Edge Automations was established to solve this exact problem. We unite electronic security, solar backup energy, and gate automation under a single, disciplined engineering standard. We calculate your load, run concealed conduits, install surge protection, and calibrate mobile monitoring so your infrastructure operates as one unified system.
+              <p className="text-base text-slate-600">
+                TeeDee Edge Automations was built to solve that problem. We design and deliver
+                integrated systems around the real demands of the site, with dependable cabling,
+                proper power planning and post-installation handover so the operation works as one
+                coordinated system rather than a collection of disconnected hardware.
               </p>
 
-              <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 rounded-xl bg-td-paper border border-td-graphite/5 space-y-1">
-                  <div className="font-display text-sm font-bold text-td-graphite">
-                    100% Verified Corporate Entity
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-2xl border border-td-graphite/10 bg-td-paper p-5">
+                  <div className="font-display text-base font-bold text-td-graphite">
+                    Verified corporate entity
                   </div>
-                  <p className="text-xs text-slate-500">
-                    Officially incorporated under the Corporate Affairs Commission (CAC) with registration number {siteConfig.rcNumber}.
+                  <p className="mt-2 text-sm text-slate-600">
+                    Registered in Nigeria with CAC number {siteConfig.rcNumber}.
                   </p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-td-paper border border-td-graphite/5 space-y-1">
-                  <div className="font-display text-sm font-bold text-td-graphite">
-                    Dual Technical Operational Hubs
+                <div className="rounded-2xl border border-td-graphite/10 bg-td-paper p-5">
+                  <div className="font-display text-base font-bold text-td-graphite">
+                    Dual operational hubs
                   </div>
-                  <p className="text-xs text-slate-500">
-                    Physical workshops and staging centers in both Lagos (Ogudu/Ojota) and Abuja (CBD Ekiti House).
+                  <p className="mt-2 text-sm text-slate-600">
+                    Technical support and project coordination across Lagos and Abuja.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Right Card: Location & Verification Showcase */}
-            <div className="lg:col-span-5 bg-td-graphite text-white rounded-2xl p-8 shadow-xl border border-white/10 space-y-6">
-              <div className="flex items-center gap-3 pb-6 border-b border-white/10">
-                <ShieldCheck className="h-6 w-6 text-td-red" />
+            <div className="rounded-3xl border border-white/10 bg-td-graphite p-7 text-white shadow-2xl lg:col-span-5">
+              <div className="flex items-center gap-3 border-b border-white/10 pb-5">
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-td-red/10 text-td-red">
+                  <ShieldCheck className="h-5 w-5" />
+                </div>
                 <div>
-                  <h3 className="font-display text-lg font-bold text-white">
-                    Operational Footprint
-                  </h3>
-                  <span className="font-mono text-xs text-td-orange">
+                  <div className="font-display text-lg font-bold text-white">Operational footprint</div>
+                  <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-td-orange">
                     {siteConfig.rcNumber}
-                  </span>
+                  </div>
                 </div>
               </div>
 
-              <div className="space-y-6">
+              <div className="mt-6 space-y-5">
                 {siteConfig.offices.map((office) => (
-                  <div key={office.city} className="space-y-1.5">
+                  <div key={office.city}>
                     <div className="flex items-center gap-2 font-display text-sm font-bold text-white">
                       <MapPin className="h-4 w-4 text-td-red" />
-                      <span>{office.city} Office ({office.badge})</span>
+                      {office.city} Office ({office.badge})
                     </div>
-                    <p className="text-xs text-slate-300 pl-6 leading-relaxed">
-                      {office.address}
-                    </p>
+                    <p className="mt-2 pl-6 text-sm text-slate-300">{office.address}</p>
                   </div>
                 ))}
               </div>
 
-              <div className="pt-6 border-t border-white/10 space-y-3">
-                <div className="text-xs font-mono text-slate-400">
-                  Direct Field Engineering Inquiries:
+              <div className="mt-6 border-t border-white/10 pt-5">
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em] text-slate-400">
+                  Direct field enquiries
                 </div>
-                <div className="flex flex-col gap-2 text-sm font-display font-semibold">
-                  <a
-                    href={`tel:${siteConfig.phonePrimary}`}
-                    className="flex items-center gap-2 text-white hover:text-td-orange transition-colors"
-                  >
+                <div className="mt-4 space-y-3 text-sm">
+                  <a href={`tel:${siteConfig.phonePrimary}`} className="flex items-center gap-2 text-white hover:text-td-orange">
                     <PhoneCall className="h-4 w-4 text-td-red" />
                     {siteConfig.phonePrimaryDisplay}
                   </a>
-                  <a
-                    href={`tel:${siteConfig.phoneSecondary}`}
-                    className="flex items-center gap-2 text-white hover:text-td-orange transition-colors"
-                  >
+                  <a href={`tel:${siteConfig.phoneSecondary}`} className="flex items-center gap-2 text-white hover:text-td-orange">
                     <PhoneCall className="h-4 w-4 text-td-red" />
                     {siteConfig.phoneSecondaryDisplay}
                   </a>
@@ -138,18 +125,19 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* Call to Action Banner */}
-      <section className="bg-td-paper py-16 border-t border-td-graphite/10">
-        <Container className="text-center max-w-3xl space-y-6">
-          <h2 className="font-display text-3xl font-extrabold text-td-graphite">
-            Discuss Your Property with Our Engineers
+      <section className="border-t border-td-graphite/10 bg-td-paper py-16 sm:py-20">
+        <Container className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-3xl font-extrabold tracking-[-0.05em] text-td-graphite sm:text-4xl">
+            Discuss your property with our engineers.
           </h2>
-          <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Whether building a new home, upgrading security on a commercial facility, or looking to eliminate generator noise with solar, our engineering team is ready to assist.
+          <p className="mt-4 text-base text-slate-600">
+            Whether you are upgrading a home, securing an estate or planning a larger commercial
+            installation, we can advise on the most practical system architecture for your site.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <Button href="/contact" variant="primary" size="lg" className="gap-2">
-              Request a Site Assessment
+              Request a site assessment
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button
@@ -160,7 +148,7 @@ export default function AboutPage() {
               className="gap-2"
             >
               <MessageSquare className="h-4 w-4" />
-              Chat on WhatsApp
+              WhatsApp chat
             </Button>
           </div>
         </Container>
