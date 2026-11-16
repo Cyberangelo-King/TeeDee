@@ -1,36 +1,11 @@
 {
-<<<<<<< HEAD
-  "name": "teedee-edge-automations-website",
-  "version": "0.1.0",
-=======
   "name": "teedee-edge-website",
   "version": "1.0.0",
->>>>>>> 0a6a580 (feat: complete first release of TeeDee Edge Automations website)
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-<<<<<<< HEAD
-    "lint": "eslint ."
-  },
-  "dependencies": {
-    "next": "^15.5.6",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "lucide-react": "^0.468.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.15.30",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.7",
-    "eslint": "^9.32.0",
-    "eslint-config-next": "^15.5.6",
-    "typescript": "^5.8.3"
-  }
-}
-=======
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -51,4 +26,3 @@
     "typescript": "^5.7.3"
   }
 }
->>>>>>> 0a6a580 (feat: complete first release of TeeDee Edge Automations website)
