@@ -38,7 +38,7 @@ export function ServiceGrid() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <SectionHeader
             title="Comprehensive Systems Engineering"
-            description="All 10 integrated services advertised by TeeDee Edge Automations LTD, engineered for reliable performance under Nigerian environmental and utility conditions."
+            description="All 10 integrated services advertised by Teedee Edge Automations LTD, engineered for reliable performance under Nigerian environmental and utility conditions."
           />
           <div className="flex-shrink-0">
             <Link
