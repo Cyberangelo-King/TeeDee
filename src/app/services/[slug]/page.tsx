@@ -172,7 +172,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                   Crucial Planning Considerations
                 </h3>
                 <p className="text-sm text-slate-600 mb-4 leading-relaxed">
-                  Before commencing installation, TeeDee Edge evaluates the following site factors to guarantee long-term durability and safety:
+                  Before commencing installation, Teedee Edge evaluates the following site factors to guarantee long-term durability and safety:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {service.planningFactors.map((factor, i) => (
