@@ -35,7 +35,7 @@ export function AboutSection() {
           {/* Left Column: Story & Commitments (7 cols) */}
           <div className="lg:col-span-7 space-y-6">
             <Badge variant="dark" dot>
-              ABOUT TEEDEE EDGE AUTOMATIONS
+              ABOUT Teedee EDGE AUTOMATIONS
             </Badge>
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
@@ -43,7 +43,7 @@ export function AboutSection() {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-              Many security providers treat cameras, gate motors, and power systems as disconnected retail gadgets. At TeeDee Edge Automations LTD, we approach physical infrastructure as an integrated engineering ecosystem.
+              Many security providers treat cameras, gate motors, and power systems as disconnected retail gadgets. At Teedee Edge Automations LTD, we approach physical infrastructure as an integrated engineering ecosystem.
             </p>
 
             <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
