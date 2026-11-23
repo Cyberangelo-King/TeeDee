@@ -303,7 +303,7 @@ export const services: Service[] = [
     title: "Professional Technical Training",
     shortDescription: "Hands-on, practical installation training on CCTV, solar/inverters, electric fencing, access control, and automation.",
     customerOutcome: "Gain certified, field-ready technical skills in modern electronic security and renewable power engineering from active practitioners.",
-    overview: "Theory alone does not build systems. TeeDee Edge Automations delivers intensive, hands-on technical training led by seasoned field engineers. Students, technicians, and corporate teams gain practical experience wiring real energizers, programming NVRs, splicing cables, calculating inverter loads, and troubleshooting live circuits.",
+    overview: "Theory alone does not build systems. Teedee Edge Automations delivers intensive, hands-on technical training led by seasoned field engineers. Students, technicians, and corporate teams gain practical experience wiring real energizers, programming NVRs, splicing cables, calculating inverter loads, and troubleshooting live circuits.",
     scopeItems: [
       "Hands-on workstation wiring: CCTV, inverters, smart locks, electric fences",
       "System design calculations, load auditing, and schematic reading",
