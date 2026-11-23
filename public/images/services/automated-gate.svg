@@ -15,7 +15,7 @@
     <path d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"/>
   </g>
   <text x="400" y="380" font-family="'Manrope', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">AUTOMATED GATE MOTORS</text>
-  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="14" fill="#E57A2F" text-anchor="middle" letter-spacing="3">TEEDEE EDGE AUTOMATIONS LTD</text>
+  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="14" fill="#E57A2F" text-anchor="middle" letter-spacing="3">Teedee EDGE AUTOMATIONS LTD</text>
   <line x1="300" y1="450" x2="500" y2="450" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
   <text x="400" y="480" font-family="'Inter', sans-serif" font-weight="500" font-size="13" fill="#94A3B8" text-anchor="middle">RC: 8231485 · LAGOS &amp; ABUJA</text>
 </svg>
