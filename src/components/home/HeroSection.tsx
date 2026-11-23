@@ -91,7 +91,7 @@ export function HeroSection() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base text-slate-300 sm:text-lg">
-              TeeDee Edge brings CCTV surveillance, pure sine solar and inverter
+              Teedee Edge brings CCTV surveillance, pure sine solar and inverter
               systems, biometric access and automated gate technology together around
               the real operational needs of homes and businesses in Nigeria.
             </p>
