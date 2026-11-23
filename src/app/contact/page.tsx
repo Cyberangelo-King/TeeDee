@@ -15,7 +15,7 @@ import { siteConfig } from "@/content/site";
 export const metadata: Metadata = {
   title: "Request Site Assessment & Contact",
   description:
-    "Schedule an on-site security, solar inverter, or building automation survey in Lagos or Abuja with TeeDee Edge Automations LTD.",
+    "Schedule an on-site security, solar inverter, or building automation survey in Lagos or Abuja with Teedee Edge Automations LTD.",
 };
 
 export default function ContactPage() {
