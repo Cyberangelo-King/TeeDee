@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
-  name: "TeeDee Edge Automations LTD",
+  name: "Teedee Edge Automations LTD",
   tagline: "Engineering that protects, powers and connects.",
   brandLine: "Secure. Power. Automate.",
   rcNumber: "RC: 8231485",
