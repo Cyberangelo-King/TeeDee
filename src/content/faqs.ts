@@ -15,7 +15,7 @@ export const faqs: FaqItem[] = [
   },
   {
     id: "existing-upgrades",
-    question: "Can TeeDee Edge assess, repair, or upgrade my existing security systems?",
+    question: "Can Teedee Edge assess, repair, or upgrade my existing security systems?",
     answer: "Yes. Many clients engage us to troubleshoot malfunctioning cameras, re-tension loose electric fences, replace aging lead-acid batteries with high-capacity lithium iron phosphate (LiFePO4) storage, or replace obsolete analog cameras with high-definition IP network systems while preserving functional infrastructure.",
     category: "security",
   },
