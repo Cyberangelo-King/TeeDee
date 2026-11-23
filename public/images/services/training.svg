@@ -15,7 +15,7 @@
     <path d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
   </g>
   <text x="400" y="380" font-family="'Manrope', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">TECHNICAL INSTALLATION TRAINING</text>
-  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="14" fill="#E57A2F" text-anchor="middle" letter-spacing="3">TEEDEE EDGE AUTOMATIONS LTD</text>
+  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="14" fill="#E57A2F" text-anchor="middle" letter-spacing="3">Teedee EDGE AUTOMATIONS LTD</text>
   <line x1="300" y1="450" x2="500" y2="450" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
   <text x="400" y="480" font-family="'Inter', sans-serif" font-weight="500" font-size="13" fill="#94A3B8" text-anchor="middle">RC: 8231485 · LAGOS &amp; ABUJA</text>
 </svg>
