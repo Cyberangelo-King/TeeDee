@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     "Electric fencing Nigeria",
     "Smart locks hotel door locks",
     "Building automation Abuja",
-    "TeeDee Edge Automations",
+    "Teedee Edge Automations",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.domain }],
   creator: siteConfig.name,
