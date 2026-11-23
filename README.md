@@ -1,6 +1,6 @@
-# TeeDee Edge Automations — Public Website
+# Teedee Edge Automations — Public Website
 
-The public website is the first delivery surface in the TeeDee digital operations programme.
+The public website is the first delivery surface in the Teedee digital operations programme.
 
 ## Live preview
 - Production: https://teedeeedge.netlify.app
@@ -42,7 +42,7 @@ Next.js writes the complete static site to `out/`. Netlify publishes that direct
 Netlify Forms processing is enabled for the project enquiry form. The project is configured for Netlify static export in `netlify.toml`; `NETLIFY_NEXT_PLUGIN_SKIP=true` prevents a server adapter from being injected into this static-only build.
 
 ## Important launch checks
-The current public copy is intentionally conservative. Before treating the website as the final approved company profile, TeeDee should confirm:
+The current public copy is intentionally conservative. Before treating the website as the final approved company profile, Teedee should confirm:
 - Exact service catalogue and technical scope
 - Company contact details and official business address
 - Approved project photographs, case studies, certifications and client permissions
