@@ -5,7 +5,7 @@ import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy and client data handling protocol for TeeDee Edge Automations LTD.",
+  description: "Privacy policy and client data handling protocol for Teedee Edge Automations LTD.",
 };
 
 export default function PrivacyPage() {
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
               2. Strict Confidentiality of Security & Layout Data
             </h2>
             <p>
-              We recognize the sensitive nature of physical security. Any site plans, camera viewing angles, NVR network credentials, gate access codes, or building blueprints shared with TeeDee Edge Automations LTD are treated under strict confidentiality. We never publish or disclose camera views or identifiable building layouts without prior written authorization.
+              We recognize the sensitive nature of physical security. Any site plans, camera viewing angles, NVR network credentials, gate access codes, or building blueprints shared with Teedee Edge Automations LTD are treated under strict confidentiality. We never publish or disclose camera views or identifiable building layouts without prior written authorization.
             </p>
           </section>
 
