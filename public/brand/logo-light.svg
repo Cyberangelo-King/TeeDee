@@ -30,8 +30,8 @@
 
   <!-- Brand Typography -->
   <g transform="translate(155, 30)">
-    <!-- TEEDEE EDGE Display Typography in Pure White -->
-    <text x="0" y="48" font-family="'Manrope', 'Arial Black', sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" letter-spacing="1.5">TEEDEE EDGE</text>
+    <!-- Teedee EDGE Display Typography in Pure White -->
+    <text x="0" y="48" font-family="'Manrope', 'Arial Black', sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" letter-spacing="1.5">Teedee EDGE</text>
 
     <!-- AUTOMATIONS Ribbon -->
     <g transform="translate(0, 62)">
