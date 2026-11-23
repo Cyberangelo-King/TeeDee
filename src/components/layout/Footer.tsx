@@ -18,7 +18,7 @@ export function Footer() {
               <div className="relative h-11 w-52">
                 <Image
                   src="/brand/logo-light.svg"
-                  alt="TeeDee Edge Automations Logo"
+                  alt="Teedee Edge Automations Logo"
                   fill
                   className="object-contain object-left"
                 />
