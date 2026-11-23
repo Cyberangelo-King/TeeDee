@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "About TeeDee Edge Automations LTD",
+  title: "About Teedee Edge Automations LTD",
   description:
     "Registered Nigerian systems partner engineering electronic security, pure sine solar inverter energy, and smart automation across Lagos and Abuja.",
 };
@@ -25,7 +25,7 @@ export default function AboutPage() {
               Engineering that protects, powers and connects.
             </h1>
             <p className="max-w-2xl text-base text-slate-300 sm:text-lg">
-              TeeDee Edge Automations LTD is a dedicated electronic systems partner helping
+              Teedee Edge Automations LTD is a dedicated electronic systems partner helping
               homes, estates and businesses deploy reliable security, solar backup power and
               smart automation without the usual disconnect between equipment and outcome.
             </p>
@@ -53,7 +53,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-base text-slate-600">
-                TeeDee Edge Automations was built to solve that problem. We design and deliver
+                Teedee Edge Automations was built to solve that problem. We design and deliver
                 integrated systems around the real demands of the site, with dependable cabling,
                 proper power planning and post-installation handover so the operation works as one
                 coordinated system rather than a collection of disconnected hardware.
