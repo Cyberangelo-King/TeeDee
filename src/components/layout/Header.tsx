@@ -79,7 +79,7 @@ export function Header() {
             <div className="relative h-10 w-40 sm:h-11 sm:w-48">
               <Image
                 src="/brand/logo-light.svg"
-                alt="TeeDee Edge Automations Logo"
+                alt="Teedee Edge Automations Logo"
                 fill
                 priority
                 className="object-contain object-left transition-transform duration-200 group-hover:scale-[1.02]"
