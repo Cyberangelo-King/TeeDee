@@ -15,7 +15,7 @@
     <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
   </g>
   <text x="400" y="380" font-family="'Manrope', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">FIRE & INTRUSION ALARMS</text>
-  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="14" fill="#E57A2F" text-anchor="middle" letter-spacing="3">TEEDEE EDGE AUTOMATIONS LTD</text>
+  <text x="400" y="420" font-family="'IBM Plex Mono', monospace" font-weight="600" font-size="14" fill="#E57A2F" text-anchor="middle" letter-spacing="3">Teedee EDGE AUTOMATIONS LTD</text>
   <line x1="300" y1="450" x2="500" y2="450" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1"/>
   <text x="400" y="480" font-family="'Inter', sans-serif" font-weight="500" font-size="13" fill="#94A3B8" text-anchor="middle">RC: 8231485 · LAGOS &amp; ABUJA</text>
 </svg>
