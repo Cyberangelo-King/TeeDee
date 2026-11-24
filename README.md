@@ -1,52 +1,81 @@
-# Teedee Edge Automations — Public Website
+# Teedee Edge Automations LTD — Corporate Website and Website CMS
 
-The public website is the first delivery surface in the Teedee digital operations programme.
+The public website is the first digital delivery surface for Teedee. The current engagement extends the existing corporate website with a custom Website CMS and the infrastructure, quality and operational controls needed to run it.
 
-## Live preview
-- Production: https://teedeeedge.netlify.app
-- Netlify project: https://app.netlify.com/projects/teedeeedge
+**Current documentation baseline:** 24 November 2026  
+**Project status:** Initial requirements and engineering foundation  
+**Current scope:** Corporate website + Website CMS  
+**Future roadmap only:** Teedee Ops and Teedee Connect are separate future products and are not included in this engagement.
 
-## Technology
-- Next.js 15 static export
-- React 19
+## Project references
+
+- Existing website reference: https://teedeeedge.netlify.app
+- Existing Netlify project reference: https://app.netlify.com/projects/teedeeedge
+- Initial project documentation: [docs/README.md](docs/README.md)
+- Build journal: [Build-Journal.md](Build-Journal.md)
+
+## Documentation
+
+Start with [the documentation index](docs/README.md).
+
+Key documents:
+- [Project Charter](docs/00-foundation/PROJECT-CHARTER.md)
+- [Project Brief](docs/00-foundation/PROJECT-BRIEF.md)
+- [Scope and Deliverables](docs/00-foundation/SCOPE-AND-DELIVERABLES.md)
+- [Product Requirements Document](docs/01-product/PRD.md)
+- [Technical Requirements Document](docs/02-technical/TRD.md)
+- [Existing Repository Baseline and Gap Assessment](docs/02-technical/EXISTING-BASELINE-AND-GAPS.md)
+- [Architecture Overview](docs/02-technical/ARCHITECTURE-OVERVIEW.md)
+- [Roadmap](docs/04-delivery/ROADMAP.md)
+- [Master Project To-do](docs/04-delivery/MASTER-TODO.md)
+- [Ownership and Infrastructure Setup](docs/05-infrastructure/OWNERSHIP-AND-SETUP-CHECKLIST.md)
+- [Final Handover Plan](docs/90-final-handover/README.md)
+
+The initial documentation is a planning baseline and must be reviewed by Teedee. It does not claim that proposed features have been implemented. Final handover documentation will be produced after the software is built and tested.
+
+## Existing technology baseline
+
+The existing website repository currently uses:
+- Next.js 15 and React 19
 - TypeScript
+- Tailwind CSS
+- Framer Motion
 - Lucide icons
-- Netlify hosting and form handling
+- Netlify deployment configuration
 
-## Website experience
-- Responsive public-facing company website
-- Capability overview: security and surveillance, network infrastructure, power and energy systems, and integrated technology
-- Delivery approach and project enquiry journey
-- FAQ content and accessible native disclosure interactions
-- Netlify Forms-compatible project enquiry form
-- Metadata, Open Graph and search indexing defaults
-- Reduced-motion support and keyboard focus states
-- Dedicated static thank-you and not-found pages
+The current Next.js configuration uses static export and the Netlify build publishes the generated out directory. This is suitable for the current static website features but is a material design constraint for the custom CMS. The CMS hosting, authentication, data and publication architecture must be proven before implementation. See the [TRD](docs/02-technical/TRD.md) and [Architecture Overview](docs/02-technical/ARCHITECTURE-OVERVIEW.md).
 
 ## Local development
 
-```bash
-npm install
-npm run dev
-```
+Prerequisites: a compatible Node.js version (the current Netlify configuration specifies Node.js 22) and npm.
 
-## Production build
+Install dependencies:
 
-```bash
-npm run build
-```
+    npm install
 
-Next.js writes the complete static site to `out/`. Netlify publishes that directory. The application does not require a Next.js server runtime for its current public-site feature set.
+Start the development server:
 
-## Deployment
-Netlify Forms processing is enabled for the project enquiry form. The project is configured for Netlify static export in `netlify.toml`; `NETLIFY_NEXT_PLUGIN_SKIP=true` prevents a server adapter from being injected into this static-only build.
+    npm run dev
 
-## Important launch checks
-The current public copy is intentionally conservative. Before treating the website as the final approved company profile, Teedee should confirm:
-- Exact service catalogue and technical scope
-- Company contact details and official business address
-- Approved project photographs, case studies, certifications and client permissions
-- Privacy notice, data controller contact and enquiry retention process
-- Domain ownership and preferred primary domain
+Build the current static website:
 
-Do not add unverified credentials, project claims, testimonials, client logos or performance statistics.
+    npm run build
+
+Run lint:
+
+    npm run lint
+
+The commands above describe the current repository scripts. The test, typecheck and CI quality gates will be expanded as part of the engineering work.
+
+## Repository and account ownership
+
+The repository currently belongs to a personal GitHub account and is public. The intended production model is for Teedee to own its GitHub organisation/repository, Netlify team, domain, DNS, database and billing, with individual named developer access. See the ownership checklist before transferring or provisioning production infrastructure.
+
+## Project truth rules
+
+- Do not invent company facts, service capabilities, credentials, client references, case studies, warranties or metrics.
+- Do not publish media without the required rights and company permission.
+- Do not commit secrets, production credentials or recovery codes.
+- Do not mark a task complete without evidence.
+- Do not imply that a form has been received unless the configured destination confirms delivery.
+- Do not add future Ops or Connect functionality to the current engagement without written scope approval.
