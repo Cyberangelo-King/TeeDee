@@ -2,7 +2,7 @@
 
 **Version:** 0.1 | **Date:** 24 November 2026 | **Status:** Initial — all rows pending confirmation unless noted
 
-Use this register to stop unsupported facts from entering public pages. Add a source, approver and approval date before content is marked publishable.
+Use this register to stop unsupported facts from entering public pages. Add a source, approver and approval date before content is marked publishable. The two supplied company profiles have now been extracted into the [Company Source of Truth](../00-foundation/COMPANY-SOURCE-OF-TRUTH.md). Their facts are document-supported but remain pending current owner/technical approval; the existence of a profile is not approval to publish every statement or logo.
 
 | ID | Content item | Evidence/source required | Reviewer | Status |
 |---|---|---|---|---|
@@ -26,6 +26,11 @@ Use this register to stop unsupported facts from entering public pages. Add a so
 | CA-18 | FAQ answers | Technical review | Technical reviewer | Pending |
 | CA-19 | Privacy and enquiry wording | Legal/privacy review | CEO / adviser | Pending |
 | CA-20 | SEO structured-data facts | Visible approved page content | Developer + company approver | Pending |
+| CA-21 | Manufacturer brand / authorisation claims | Current supply relationship, authorisation evidence and logo permissions | CEO / relevant manufacturer | Pending |
+| CA-22 | Training programme details and accreditation | Current course catalogue and documentary accreditation evidence, if any | CEO / training lead | Pending |
+| CA-23 | Smart-home/building automation scope | Current technical service specification and supported platforms | Technical reviewer | Pending |
+| CA-24 | Solar/inverter runtime and continuity claims | Site-sizing method, system specifications and approved limitations | Technical reviewer | Pending |
+| CA-25 | Electric-fence and fire-alarm safety/compliance claims | Applicable standards, installation process and technical/legal review | Technical reviewer / adviser | Pending |
 
 ## Approval rule
 
