@@ -16,6 +16,7 @@ This is not the final technical handover. Final handover documentation will be p
 
 ## 2. Read in this order
 
+0. [Company Source of Truth — extracted profile facts and validation register](00-foundation/COMPANY-SOURCE-OF-TRUTH.md)
 1. [Project Charter](00-foundation/PROJECT-CHARTER.md)
 2. [Project Brief](00-foundation/PROJECT-BRIEF.md)
 3. [Scope and Deliverables](00-foundation/SCOPE-AND-DELIVERABLES.md)
