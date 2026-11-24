@@ -8,6 +8,8 @@ The website's credibility depends on accurate content and genuine, properly lice
 
 ## 2. Company information pack
 
+The company has supplied two 16-page company profiles: `Teedee Edge Profile.pdf` (February 2026; primary current editorial source) and `Company Profile Teedee_034241.pdf` (June 2024; historical corroboration). Their extracted content is organised in the [Company Source of Truth](../00-foundation/COMPANY-SOURCE-OF-TRUTH.md). The newer profile should take precedence where wording differs, while all contact details, service availability, manufacturer relationships, warranties, training claims and public-facing statements still require owner confirmation.
+
 Teedee should provide or approve:
 
 - Exact legal company name and approved public display name.
@@ -103,7 +105,9 @@ The repository already contains brand assets and service imagery. Their presence
 
 - [ ] Obtain original logo source file and confirm approved variants.
 - [ ] Obtain current brand guide and confirm palette/type direction.
-- [ ] Audit supplied flyer and transcribe facts for company approval.
+- [x] Extract both supplied 16-page company profiles into the company source-of-truth register; record page-level sources, service details, contact details, visual observations and unverified claims.
+- [ ] Obtain owner/technical approval for extracted company facts before publication.
+- [ ] Audit original profile PDFs and transcribe any remaining approved facts for company sign-off.
 - [ ] Collect genuine service photography.
 - [ ] Collect project evidence and written permission.
 - [ ] Confirm whether a hero video can be filmed or licensed.
