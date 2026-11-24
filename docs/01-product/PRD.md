@@ -110,6 +110,8 @@ The system must not display a success claim until the submission has been accept
 
 ## 7. Content and truth requirements
 
+The company supplied two 16-page profiles (February 2026 and June 2024). Their extracted facts, service catalogue, sector descriptions, manufacturer-logo caveats, contact details and approval gaps are recorded in the [Company Source of Truth](../00-foundation/COMPANY-SOURCE-OF-TRUTH.md). Use that register as the working content baseline; do not treat profile statements as independently verified claims or final publication approval.
+
 - Company legal name and public name must be confirmed.
 - Service claims must be technically reviewed.
 - Contact numbers, email, address, social URLs and business hours must be supplied or verified by Teedee.
