@@ -26,46 +26,45 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — ${siteConfig.brandLine}`,
+    default: "Teedee Edge Automations | Security, Power & Building Automation",
     template: `%s | ${siteConfig.name}`,
   },
   description:
-    "Practical systems partner for integrated CCTV surveillance, solar and inverter backup power, biometric access control, automated gates, electric fencing, and smart building automation in Nigeria.",
+    "Integrated electronic security, CCTV surveillance, solar and backup power, access control, and smart building automation for homes and businesses across Nigeria.",
   keywords: [
+    "Teedee Edge Automations",
     "CCTV installation Lagos",
     "Solar and inverter installation Nigeria",
-    "Access control biometrics",
+    "Access control and biometrics",
     "Automated gate systems Lagos",
     "Electric fencing Nigeria",
-    "Smart locks hotel door locks",
-    "Building automation Abuja",
-    "Teedee Edge Automations",
+    "Smart building automation Abuja",
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.domain }],
   creator: siteConfig.name,
   metadataBase: new URL(siteConfig.domain),
+  alternates: { canonical: "/" },
   icons: {
     icon: "/brand/favicon.svg",
     shortcut: "/brand/favicon.svg",
     apple: "/brand/favicon.svg",
   },
   openGraph: {
-    title: `${siteConfig.name} — ${siteConfig.brandLine}`,
-    description: "Integrated Electronic Security, Solar Power, and Building Automation Systems.",
+    title: "Teedee Edge Automations | Security, Power & Building Automation",
+    description:
+      "Integrated electronic security, solar and backup power, and smart building automation for homes and businesses across Nigeria.",
     url: siteConfig.domain,
     siteName: siteConfig.name,
     locale: "en_NG",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.brandLine}`,
-    description: "Integrated Electronic Security, Solar Power, and Building Automation Systems.",
+    card: "summary",
+    title: "Teedee Edge Automations | Security, Power & Building Automation",
+    description:
+      "Integrated electronic security, solar and backup power, and smart building automation across Nigeria.",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
