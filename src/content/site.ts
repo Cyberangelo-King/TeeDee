@@ -11,7 +11,7 @@ export const siteConfig: SiteConfig = {
   phoneSecondaryDisplay: "0904 721 4125",
   whatsappNumber: "2348068999442",
   email: "info@teedeeedgeautomations.com",
-  domain: "https://www.teedeeedgeautomations.com",
+  domain: "https://teedeeedge.com",
   offices: [
     {
       city: "Lagos",
