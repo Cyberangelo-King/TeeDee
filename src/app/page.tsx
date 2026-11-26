@@ -1,4 +1,5 @@
 import React from "react";
+import { LaunchGate } from "@/components/launch/LaunchGate";
 import { HeroSection } from "@/components/home/HeroSection";
 import { BrandStrip } from "@/components/home/BrandStrip";
 import { ServiceGrid } from "@/components/home/ServiceGrid";
@@ -11,16 +12,18 @@ import { CtaSection } from "@/components/home/CtaSection";
 
 export default function HomePage() {
   return (
-    <>
-      <HeroSection />
-      <BrandStrip />
-      <AboutSection />
-      <ServiceGrid />
-      <ProcessSection />
-      <IndustrySection />
-      <FaqSection />
-      <ContactBar />
-      <CtaSection />
-    </>
+    <LaunchGate>
+      <>
+        <HeroSection />
+        <BrandStrip />
+        <AboutSection />
+        <ServiceGrid />
+        <ProcessSection />
+        <IndustrySection />
+        <FaqSection />
+        <ContactBar />
+        <CtaSection />
+      </>
+    </LaunchGate>
   );
 }
